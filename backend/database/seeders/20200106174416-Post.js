@@ -9,6 +9,20 @@ module.exports = {
       content: "Tosi kiinnostava aihe :)",
       createdAt: new Date(),
       updatedAt: new Date()
+    },
+    {
+      thread_id: 1,
+      user_id: 1,
+      content: "Puhunko mä yksin täällä? :(",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      thread_id: 1,
+      user_id: 1,
+      content: "haha joo :D",
+      createdAt: new Date(),
+      updatedAt: new Date()
     }], {});
   },
 

@@ -4,10 +4,11 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
 
     return queryInterface.bulkInsert('Threads', [{
-      title: 'Kiinnostava keskustelu',
       user_id: 1,
+      title: 'Kiinnostava keskustelu',
+      category: 'DataTypes.STRING',
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     }], {});
   },
 
