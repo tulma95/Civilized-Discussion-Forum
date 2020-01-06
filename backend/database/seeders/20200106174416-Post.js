@@ -23,6 +23,20 @@ module.exports = {
       content: "haha joo :D",
       createdAt: new Date(),
       updatedAt: new Date()
+    },
+    {
+      thread_id: 2,
+      user_id: 1,
+      content: "Autoilla pääsee kovaa prum prum",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      thread_id: 2,
+      user_id: 1,
+      content: "osaatteko reactii??",
+      createdAt: new Date(),
+      updatedAt: new Date()
     }], {});
   },
 

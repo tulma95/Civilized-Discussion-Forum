@@ -9,6 +9,20 @@ module.exports = {
       category: 'DataTypes.STRING',
       createdAt: new Date(),
       updatedAt: new Date(),
+    },
+    {
+      user_id: 1,
+      title: 'Koulussa on kivaa',
+      category: 'DataTypes.STRING',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      user_id: 1,
+      title: 'Kolmas keskustelu',
+      category: 'DataTypes.STRING',
+      createdAt: new Date(),
+      updatedAt: new Date(),
     }], {});
   },
 
