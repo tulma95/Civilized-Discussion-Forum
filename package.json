@@ -1,0 +1,34 @@
+{
+  "name": "Civilized-Discussion-Forum",
+  "version": "1.0.0",
+  "description": "Imageboard for civilized discussion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon backend/index.js",
+    "init-db": "sequelize init",
+    "generateThread": "sequelize model:generate --name Thread --attributes title:string,user_id:integer",
+    "generateUser": "sequelize model:generate --name User --attributes username:string,passwordhash:string",
+    "generatePost": "sequelize model:generate --name Post --attributes thread_id:integer,user_id:integer,image:blob,content:string"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tulma95/Civilized-Discussion-Forum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tulma95/Civilized-Discussion-Forum/issues"
+  },
+  "homepage": "https://github.com/tulma95/Civilized-Discussion-Forum#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2",
+    "pg": "^7.17.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3",
+    "sequelize-cli": "^5.5.1"
+  }
+}
