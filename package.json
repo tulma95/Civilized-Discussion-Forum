@@ -44,9 +44,6 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": [
-      "html"
-    ],
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
       "/node_modules/"
