@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1     
     - run: npm ci
-    - run: node client.js
+    - run: npm run test
       
       env:
         # use postgres for the host here because we have specified a container for the job.
