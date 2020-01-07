@@ -10,7 +10,6 @@
     "watch": "cross-env NODE_ENV=development nodemon backend/",
     "seed": "sequelize db:seed:all",
     "seed-prod": "cross-env NODE_ENV=production sequelize db:seed:all",
-
     "migrate-prod": "cross-env NODE_ENV=production npm run migrate",
     "migrate": "sequelize db:migrate",
     "migrate:reset": "sequelize db:migrate:undo:all && npm run migrate",
