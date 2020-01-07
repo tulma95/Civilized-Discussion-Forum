@@ -6,7 +6,6 @@ module.exports = (sequelize, DataTypes) => {
     category: DataTypes.STRING
   }, {});
   Thread.associate = function (models) {
-    // associations can be defined here
     Thread.belongsTo(models.User, {
       foreignKey: 'user_id',
       as: 'user',

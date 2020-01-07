@@ -36,7 +36,8 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = {
+  db: db,
   User: db.User,
   Thread: db.Thread,
-  Post: db.Post
+  Post: db.Post,
 };

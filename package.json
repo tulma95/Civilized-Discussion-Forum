@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node backend/",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000",
     "watch": "cross-env NODE_ENV=development nodemon backend/",
-    "init-db": "sequelize init",
+    "seeed": "sequelize db:seed:all",
+    "migrate": "sequelize db:migrate",
+    "migrate:reset": "sequelize db:migrate:undo:all && npm run migrate",
+    "pretest": "cross-env NODE_ENV=test npm run migrate:reset",
     "reset-db": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",
     "generateThread": "sequelize model:generate --name Thread --attributes title:string,user_id:integer,category:string",
     "generateUser": "sequelize model:generate --name User --attributes username:string,passwordhash:string",
@@ -42,10 +45,11 @@
     "collectCoverage": true,
     "coverageReporters": [
       "html"
+    ],
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
     ]
-  },
-  "testEnvironment": "node",
-  "coveragePathIgnorePatterns": [
-    "/node_modules/"
-  ]
+  }
+
 }

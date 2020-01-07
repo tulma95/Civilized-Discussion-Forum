@@ -7,14 +7,24 @@ threadsRouter.get('/', async (req, res) => {
 })
 
 threadsRouter.get('/:id', async (req, res) => {
-  const thread = await Thread.findAll({
-    where: {
-      id: req.params.id
-    },
-    include: [{ model: Post, as: 'posts' }]
-  })
+  try {
+    const thread = await Thread.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: [{ model: Post, as: 'posts' }]
+    })
 
-  res.json(thread)
+    if (thread) {
+      res.status(200).json(thread)
+    } else {
+      res.status(404).end()
+    }
+  } catch (error) {
+
+  }
+
+
 })
 
 module.exports = threadsRouter
