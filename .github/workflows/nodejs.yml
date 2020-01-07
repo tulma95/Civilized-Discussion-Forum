@@ -2,7 +2,8 @@ name: Node CI
 
 on: [push]
 
-
+jobs:
+  
   vm-job:
       runs-on: ubuntu-latest
 
