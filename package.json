@@ -4,9 +4,9 @@
   "description": "Imageboard for civilized discussion",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
+    "start": "cross-env NODE_ENV=production node backend/",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
-    "watch": "cross-env NODE_ENV=development nodemon backend/index.js",
+    "watch": "cross-env NODE_ENV=development nodemon backend/",
     "init-db": "sequelize init",
     "reset-db": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",
     "generateThread": "sequelize model:generate --name Thread --attributes title:string,user_id:integer,category:string",
@@ -36,5 +36,9 @@
     "cross-env": "^6.0.3",
     "jest": "^24.9.0",
     "nodemon": "^2.0.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
   }
 }
