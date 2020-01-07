@@ -4,10 +4,13 @@
   "description": "Imageboard for civilized discussion",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
-    "watch": "cross-env NODE_ENV=development nodemon backend/index.js",
-    "init-db": "sequelize init",
+    "start": "cross-env NODE_ENV=production node backend/",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000",
+    "watch": "cross-env NODE_ENV=development nodemon backend/",
+    "seeed": "sequelize db:seed:all",
+    "migrate": "sequelize db:migrate",
+    "migrate:reset": "sequelize db:migrate:undo:all && npm run migrate",
+    "pretest": "cross-env NODE_ENV=test npm run migrate:reset",
     "reset-db": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",
     "generateThread": "sequelize model:generate --name Thread --attributes title:string,user_id:integer,category:string",
     "generateUser": "sequelize model:generate --name User --attributes username:string,passwordhash:string",
@@ -35,6 +38,18 @@
   "devDependencies": {
     "cross-env": "^6.0.3",
     "jest": "^24.9.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
+
 }
