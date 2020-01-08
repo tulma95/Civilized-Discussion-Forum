@@ -12,5 +12,5 @@ test('renders content', () => {
     <CategoryList list={list} />
   )
 
-  expect(component.container).toHaveTextContent('pets')
+  expect(component.container).toHaveTextContent('cars')
 })

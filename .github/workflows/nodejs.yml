@@ -22,18 +22,31 @@ jobs:
       steps:
       - uses: actions/checkout@v1     
       - run: npm ci
-      - name: test and generate coverage
+      - name: backend test and generate coverage
         run: npm run test
         env:
           POSTGRES_HOST: localhost
           POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }} # get randomly assigned published port
           TEST_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:${{ job.services.postgres.ports[5432] }}/testdb
 
-      - name: Upload coverage to Codecov  
+      - name: frontend test and generate coverage
+        run: cd frontend && npm run test:coverage
+
+
+      - name: Upload backend coverage to Codecov  
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/clover.xml
+          flags: backendunittests
+          name: codecov-umbrella
+          fail_ci_if_error: true
+
+      - name: Upload frontend coverage to Codecov  
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./frontend/coverage/clover.xml
           flags: backendunittests
           name: codecov-umbrella
           fail_ci_if_error: true
