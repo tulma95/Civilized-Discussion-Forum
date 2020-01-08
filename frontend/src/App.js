@@ -8,7 +8,7 @@ import {
   Link
 } from "react-router-dom";
 
-const listOfCategories = ['sota', 'autot', 'ruoka', 'tietsikat']
+const listOfCategories = ['videogames', 'politics', 'music']
 
 function App() {
   const [threads, setThreads] = useState([])
