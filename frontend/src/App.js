@@ -3,6 +3,10 @@ import './App.css';
 import axios from 'axios'
 import ThreadList from './components/ThreadList'
 import CategoryList from './components/CategoryList'
+import {
+  Route,
+  Link
+} from "react-router-dom";
 
 const listOfCategories = ['sota', 'autot', 'ruoka', 'tietsikat']
 
@@ -17,6 +21,13 @@ function App() {
     fetchThreads()
   }, [])
 
+  const threadCategoryFilterer = (category) => {
+    return (item) => item.category === category
+  }
+
+  const threadsByCategory = (threads, category) => {
+    return threads.filter(threadCategoryFilterer(category))
+  }
 
   return (
     <div className='container'>
@@ -24,7 +35,14 @@ function App() {
         <CategoryList list={listOfCategories} />
       </div>
       <div className='itemB'>
-        <ThreadList threads={threads} />
+
+        <Route exact path='/'>
+          <ThreadList threads={threads} />
+        </Route>
+
+        <Route exact path='/:category' render={({ match }) =>
+          <ThreadList threads={threadsByCategory(threads, match.params.category)} />
+        } />
       </div>
     </div>
   );
