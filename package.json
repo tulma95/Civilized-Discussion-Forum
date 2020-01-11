@@ -17,7 +17,8 @@
     "reset-db": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",
     "generateThread": "sequelize model:generate --name Thread --attributes title:string,user_id:integer,category:string",
     "generateUser": "sequelize model:generate --name User --attributes username:string,passwordhash:string",
-    "generatePost": "sequelize model:generate --name Post --attributes thread_id:integer,user_id:integer,image:blob,content:string"
+    "generatePost": "sequelize model:generate --name Post --attributes thread_id:integer,user_id:integer,image:blob,content:string",
+    "dev": "start npm run watch && cd frontend && start npm run start"
   },
   "cacheDirectories": [
     "node_modules",

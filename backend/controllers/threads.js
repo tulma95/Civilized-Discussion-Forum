@@ -6,7 +6,7 @@ threadsRouter.get('/', async (req, res) => {
   res.json(threads)
 })
 
-threadsRouter.get('/:id', async (req, res) => {
+threadsRouter.get('/:category/:id', async (req, res) => {
   try {
     const thread = await Thread.findOne({
       where: {
@@ -21,10 +21,19 @@ threadsRouter.get('/:id', async (req, res) => {
       res.status(404).end()
     }
   } catch (error) {
-
   }
+})
 
+threadsRouter.get('/:category', async (req, res) => {
+  const category = req.params.category
+  const threads = await Thread.findAll({
+    where: {
+      category
+    },
+    include: [{ model: Post, as: 'posts' }]
+  })
 
+  res.status(200).json(threads)
 })
 
 module.exports = threadsRouter

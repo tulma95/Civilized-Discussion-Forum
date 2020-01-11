@@ -6,21 +6,21 @@ module.exports = {
     return queryInterface.bulkInsert('Threads', [{
       user_id: 1,
       title: 'Kiinnostava keskustelu',
-      category: 'DataTypes.STRING',
+      category: 'videogames',
       createdAt: new Date(),
       updatedAt: new Date(),
     },
     {
       user_id: 1,
       title: 'Koulussa on kivaa',
-      category: 'DataTypes.STRING',
+      category: 'videogames',
       createdAt: new Date(),
       updatedAt: new Date(),
     },
     {
       user_id: 1,
       title: 'Kolmas keskustelu',
-      category: 'DataTypes.STRING',
+      category: 'music',
       createdAt: new Date(),
       updatedAt: new Date(),
     }], {});
