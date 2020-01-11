@@ -49,17 +49,12 @@ threadsRouter.get('/:category/:id', async (req, res) => {
     } else {
       res.status(404).end()
     }
-  } catch (error) {}
+  } catch (error) { }
 })
 
 threadsRouter.post('/:category', async (req, res) => {
   const category = req.params.category
-  const body = req.body
-  const newThread = {
-    title: body.title,
-    user_id: body.user_id,
-    category
-  }
+  const newThread = { ...req.body, category }
 
   try {
     const savedThread = await Thread.create(newThread)

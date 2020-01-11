@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({
   extended: true,
   json: true
 }))
-app.use(bodyParser.json())
+app.use(bodyParser.json({ limit: '10mb' }))
 
 app.use('/', express.static('./frontend/build'))
 app.use('/api/threads', threadsRouter)

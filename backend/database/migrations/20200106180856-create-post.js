@@ -17,7 +17,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       image: {
-        type: Sequelize.BLOB
+        type: Sequelize.STRING
       },
       content: {
         allowNull: false,

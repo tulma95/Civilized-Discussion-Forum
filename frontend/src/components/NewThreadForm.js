@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import threadService from '../services/threadService'
-
+import FileUpload from './FileUpload'
 
 const NewThreadForm = ({ setThreads, allThreads, category }) => {
   const [title, setTitle] = useState('')
-
+  const [file, setFile] = useState('')
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value)
@@ -13,7 +13,7 @@ const NewThreadForm = ({ setThreads, allThreads, category }) => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const creator = 1
-    const newThread = await threadService.createNewThread(category, title, creator)
+    const newThread = await threadService.createNewThread(category, title, creator, file)
     const data = { ...newThread.data, posts: [] }
     setThreads([...allThreads, data])
     setTitle('')
@@ -28,6 +28,7 @@ const NewThreadForm = ({ setThreads, allThreads, category }) => {
         </div>
         <button type="submit">Create thread</button>
       </form>
+      <FileUpload setFile={setFile} />
     </div>
   )
 }

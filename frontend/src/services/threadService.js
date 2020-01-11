@@ -6,10 +6,11 @@ const getAllThreads = async () => {
   return axios.get(baseUrl)
 }
 
-const createNewThread = async (category, title, creator) => {
+const createNewThread = async (category, title, creator, file) => {
   const data = {
     title,
-    user_id: creator
+    user_id: creator,
+    image: file
   }
   return axios.post(`${baseUrl}/${category}`, data)
 }

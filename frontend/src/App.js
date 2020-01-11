@@ -3,7 +3,7 @@ import './App.css';
 import ThreadList from './components/ThreadList'
 import CategoryList from './components/CategoryList'
 import threadService from './services/threadService'
-import { BrowserRouter as Router, Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 
 const listOfCategories = ['videogames', 'politics', 'music']
