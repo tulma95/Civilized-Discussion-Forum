@@ -4,9 +4,9 @@ const {
   Post,
   Thread
 } = require('../database/models/index')
-const fs = require('fs')
 const AWS = require('aws-sdk')
-const path = require('path')
+const uuid = require('uuid/v4')
+const sharp = require('sharp')
 
 require('dotenv').config()
 
@@ -59,46 +59,56 @@ threadsRouter.get('/:category/:id', async (req, res) => {
 
 threadsRouter.post('/:category', async (req, res) => {
   const category = req.params.category
-  const newThread = { ...req.body, category }
+  const body = req.body
 
 
-  let base64Image = req.body.image.split(';base64,').pop();
-  const newImageName = 'hyvamaJEE.png'
-  fs.writeFileSync(newImageName, base64Image, { encoding: 'base64' }, (err) => {
-    console.log(err);
-  });
-
-  const BUCKET = 'i.civilized-discussion-forum'
-  const localImage = newImageName
+  const imageUrl = await uploadImage(req.body.image)
 
 
-  AWS.config.update({
-    region: 'us-east-1'
-  })
-
-  const s3 = new AWS.S3()
-
-  s3.putObject({
-    Bucket: BUCKET,
-    Body: fs.readFileSync(localImage),
-    Key: newImageName
-  })
-    .promise()
-    .then(res => {
-      console.log('done');
-    })
-    .catch(err => {
-      console.log(err);
-    })
+  const newThread = {
+    title: body.title,
+    category,
+    imageUrl,
+    user_id: body.user_id
+  }
 
   try {
-    // const savedThread = await Thread.create(newThread)
-    res.status(201).json(newThread)
+
+    const savedThread = await Thread.create(newThread)
+    res.status(201).json(savedThread)
   } catch (error) {
     console.log(error)
     res.json(error)
   }
 })
 
+
+const uploadImage = async (base64Image) => {
+  const BUCKET = process.env.BUCKET
+  const REGION = process.env.REGION
+  const base64Data = new Buffer.from(base64Image.replace(/^data:image\/\w+;base64,/, ""), 'base64');
+  const type = base64Image.split(';')[0].split('/')[1];
+
+  const id = uuid()
+
+  const resizedData = sharp(base64Data).resize(120)
+
+  AWS.config.update({
+    region: REGION
+  })
+
+  const s3 = new AWS.S3()
+
+  const respo = await s3.upload({
+    Bucket: BUCKET,
+    Body: resizedData,
+    Key: `${id}.${type}`,
+    ACL: 'public-read',
+    ContentType: 'image/png',
+    ContentEncoding: 'base64'
+  }).promise().catch(err => console.log(err))
+
+  return respo.Location
+}
 
 module.exports = threadsRouter

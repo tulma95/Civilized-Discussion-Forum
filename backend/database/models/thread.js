@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING,
     user_id: DataTypes.INTEGER,
     category: DataTypes.STRING,
-    image: DataTypes.BLOB
+    imageUrl: DataTypes.STRING
   }, {});
   Thread.associate = function (models) {
     Thread.belongsTo(models.User, {

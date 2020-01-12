@@ -15,7 +15,7 @@ const ThreadList = ({ setThreads, category, allThreads }) => {
 
     return (
       <div key={thread.id} className='thread'>
-        <img src={'s'} />
+        <img src={thread.imageUrl} />
         <Link to={`/${thread.category}/${thread.id}`}>
           <h1 className='threadTitle'>
             {thread.title}
