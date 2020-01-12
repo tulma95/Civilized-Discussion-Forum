@@ -5,21 +5,19 @@ const { db } = require('../database/models/index')
 const api = supertest(app)
 
 describe('Thread endpoints', () => {
-  it('threads are returned as json', async () => {
+  it('all threads are returned as json', async () => {
     await api
       .get('/api/threads')
       .expect(200)
       .expect('Content-Type', /application\/json/)
   })
 
-  it('send status 404 if no thread', async () => {
+  it('return right amount of threads with given category', async () => {
     await api
-      .get('/api/threads/100')
-      .expect(404)
+      .get('/api/threads/videogames')
+      .expect(200)
   })
-
 })
-
 
 
 afterAll(async () => {
