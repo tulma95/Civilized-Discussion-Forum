@@ -15,16 +15,20 @@ const ThreadList = ({ setThreads, category, allThreads }) => {
 
     return (
       <div key={thread.id} className='thread'>
-        <img src={thread.imageUrl} />
+        {thread.imageUrl && <img src={thread.imageUrl} alt='' />}
         <Link to={`/${thread.category}/${thread.id}`}>
           <h1 className='threadTitle'>
             {thread.title}
           </h1>
         </Link>
 
-        {thread.posts.map(post => (
-          <Post key={post.id} post={post} />
-        ))}
+
+        <div className='posts'>
+          {thread.posts.map(post => (
+            <Post key={post.id} post={post} />
+          ))}
+        </div>
+
       </div>
     )
   }
