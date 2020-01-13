@@ -16,7 +16,7 @@ threadsRouter.get('/', async (req, res) => {
     include: [{
       model: Post,
       as: 'posts',
-      limit: 1
+      limit: 3
     }]
   })
   res.json(threads)
@@ -32,7 +32,10 @@ threadsRouter.get('/:category', async (req, res) => {
       model: Post,
       as: 'posts',
       limit: 3
-    }]
+    }],
+    order: [
+      ['updatedAt', 'DESC'],
+    ],
   })
   res.status(200).json(threads)
 })
