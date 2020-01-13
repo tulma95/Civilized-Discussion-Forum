@@ -16,7 +16,8 @@ const ThreadList = ({ setThreads, category, allThreads }) => {
     .sort(sortListByUpdateDate)
 
   const mapThreads = (thread) => {
-    return <Thread key={thread.id} thread={thread} />
+    const threadWith3Post = { ...thread, posts: thread.posts.slice(-3) }
+    return <Thread key={thread.id} thread={threadWith3Post} />
   }
 
   return (

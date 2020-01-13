@@ -3,7 +3,7 @@ import './App.css';
 import ThreadList from './components/ThreadList'
 import CategoryList from './components/CategoryList'
 import threadService from './services/threadService'
-import Thread from './components/Thread'
+import SingleThread from './components/SingleThread'
 import { Route, Switch } from 'react-router-dom';
 
 
@@ -11,7 +11,6 @@ const listOfCategories = ['videogames', 'politics', 'music']
 
 function App() {
   const [threads, setThreads] = useState([])
-  const [currentThread, setCurrentThread] = useState()
 
   useEffect(() => {
     const fetchThreads = async () => {
@@ -22,10 +21,9 @@ function App() {
   }, [])
 
   const getThread = ({ params }) => {
-
     const categoryAndIdMatch = ({ category, id }) => {
       return (thread) => {
-        return thread.id == id && category === thread.category
+        return thread.id === id * 1 && category === thread.category
       }
     }
 
@@ -49,9 +47,10 @@ function App() {
 
           <Route exact path='/:category/:id'
             render={({ match }) =>
-              <Thread thread={getThread(match)} />
-            }
-          />
+              <SingleThread thread={getThread(match)}
+                allThreads={threads}
+                setThreads={setThreads} />
+            } />
 
         </Switch>
 

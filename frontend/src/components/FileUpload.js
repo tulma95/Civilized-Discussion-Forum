@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 const FileUpload = ({ setFile }) => {
 
-  const handleChange = async (event) => {
+  const handleChange = (event) => {
 
     const fr = new FileReader()
     fr.onload = () => {
