@@ -10,7 +10,8 @@ const createNewPost = async (threadId, creator, file, content) => {
     image: file,
     content
   }
-  return await axios.post(`${baseUrl}`, data)
+  const response = await axios.post(`${baseUrl}`, data)
+  return response.data
 }
 
 export default {

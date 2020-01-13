@@ -7,11 +7,11 @@ const NewPostForm = ({ allThreads, setThreads, threadId }) => {
   const [content, setContent] = useState('')
   const [file, setFile] = useState('')
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
     const creator = 1
-    const newPost = postService.createNewPost(threadId, creator, file, content)
-
+    const newPost = await postService.createNewPost(threadId, creator, file, content)
+    console.log(newPost);
     const updatedThreads = allThreads.map(thread => {
       if (thread.id === threadId) {
         const newThread = { ...thread, posts: [...thread.posts, newPost] }
