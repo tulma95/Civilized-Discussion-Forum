@@ -69,7 +69,8 @@ threadsRouter.post('/:category', async (req, res) => {
     title: body.title,
     category,
     imageUrl,
-    user_id: body.user_id
+    user_id: body.user_id,
+    content: body.content
   }
 
   try {
