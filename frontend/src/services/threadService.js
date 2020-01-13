@@ -1,0 +1,29 @@
+const axios = require('axios')
+
+const baseUrl = '/api/threads'
+
+const getAllThreads = async () => {
+  const response = await axios.get(baseUrl)
+  return response.data
+}
+
+const createNewThread = async (category, title, creator, file, content) => {
+  const data = {
+    title,
+    user_id: creator,
+    image: file,
+    content
+  }
+  return await axios.post(`${baseUrl}/${category}`, data)
+}
+
+const getSingleThread = async (category, id) => {
+  const response = await axios.get(`${baseUrl}/${category}/${id}`)
+  return response.data
+}
+
+export default {
+  getAllThreads,
+  createNewThread,
+  getSingleThread
+}

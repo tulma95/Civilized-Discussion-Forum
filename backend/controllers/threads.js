@@ -1,18 +1,51 @@
 const threadsRouter = require('express').Router()
-const { User, Post, Thread } = require('../database/models/index')
+const {
+  User,
+  Post,
+  Thread
+} = require('../database/models/index')
+
+require('dotenv').config()
+
 
 threadsRouter.get('/', async (req, res) => {
-  const threads = await Thread.findAll({ include: [{ model: Post, as: 'posts' }] })
+  const threads = await Thread.findAll({
+    include: [{
+      model: Post,
+      as: 'posts'
+    }]
+  })
   res.json(threads)
 })
 
-threadsRouter.get('/:id', async (req, res) => {
+threadsRouter.get('/:category', async (req, res) => {
+  const category = req.params.category
+  const threads = await Thread.findAll({
+    where: {
+      category
+    },
+    include: [{
+      model: Post,
+      as: 'posts',
+      limit: 3
+    }],
+    order: [
+      ['updatedAt', 'DESC'],
+    ],
+  })
+  res.status(200).json(threads)
+})
+
+threadsRouter.get('/:category/:id', async (req, res) => {
   try {
     const thread = await Thread.findOne({
       where: {
         id: req.params.id
       },
-      include: [{ model: Post, as: 'posts' }]
+      include: [{
+        model: Post,
+        as: 'posts'
+      }]
     })
 
     if (thread) {
@@ -20,11 +53,36 @@ threadsRouter.get('/:id', async (req, res) => {
     } else {
       res.status(404).end()
     }
-  } catch (error) {
+  } catch (error) { }
+})
 
+threadsRouter.post('/:category', async (req, res) => {
+  const category = req.params.category
+  const body = req.body
+
+
+  const imageUrl = await uploadImage(req.body.image)
+
+
+  const newThread = {
+    title: body.title,
+    category,
+    imageUrl,
+    user_id: body.user_id,
+    content: body.content
   }
 
+  try {
 
+    const savedThread = await Thread.create(newThread)
+    res.status(201).json(savedThread)
+  } catch (error) {
+    console.log(error)
+    res.json(error)
+  }
 })
+
+
+
 
 module.exports = threadsRouter

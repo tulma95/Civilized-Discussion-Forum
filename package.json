@@ -17,7 +17,8 @@
     "reset-db": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",
     "generateThread": "sequelize model:generate --name Thread --attributes title:string,user_id:integer,category:string",
     "generateUser": "sequelize model:generate --name User --attributes username:string,passwordhash:string",
-    "generatePost": "sequelize model:generate --name Post --attributes thread_id:integer,user_id:integer,image:blob,content:string"
+    "generatePost": "sequelize model:generate --name Post --attributes thread_id:integer,user_id:integer,image:blob,content:string",
+    "dev": "start npm run watch && cd frontend && start npm run start"
   },
   "cacheDirectories": [
     "node_modules",
@@ -35,12 +36,16 @@
   },
   "homepage": "https://github.com/tulma95/Civilized-Discussion-Forum#readme",
   "dependencies": {
+    "aws-sdk": "^2.601.0",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "pg": "^7.17.0",
+    "pg": "^7.17.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.3",
-    "sequelize-cli": "^5.5.1"
+    "sequelize-cli": "^5.5.1",
+    "sharp": "^0.23.4",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
@@ -53,6 +58,9 @@
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
       "/node_modules/"
+    ],
+    "modulePathIgnorePatterns": [
+      "./frontend"
     ]
   }
 }
