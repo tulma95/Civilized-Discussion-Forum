@@ -15,8 +15,7 @@ threadsRouter.get('/', async (req, res) => {
   const threads = await Thread.findAll({
     include: [{
       model: Post,
-      as: 'posts',
-      limit: 3
+      as: 'posts'
     }]
   })
   res.json(threads)
