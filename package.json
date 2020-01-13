@@ -10,7 +10,6 @@
     "watch": "cross-env NODE_ENV=development nodemon backend/",
     "seed": "sequelize db:seed:all",
     "seed-prod": "cross-env NODE_ENV=production sequelize db:seed:all",
-    "migrate-prod": "cross-env NODE_ENV=production npm run migrate",
     "migrate": "sequelize db:migrate",
     "migrate:reset": "sequelize db:migrate:undo:all && npm run migrate",
     "pretest": "cross-env NODE_ENV=test npm run migrate:reset",
@@ -18,7 +17,14 @@
     "generateThread": "sequelize model:generate --name Thread --attributes title:string,user_id:integer,category:string",
     "generateUser": "sequelize model:generate --name User --attributes username:string,passwordhash:string",
     "generatePost": "sequelize model:generate --name Post --attributes thread_id:integer,user_id:integer,image:blob,content:string",
-    "dev": "start npm run watch && cd frontend && start npm run start"
+    "dev": "start npm run watch && cd frontend && start npm run start",
+
+    "drop-prod": "cross-env NODE_ENV=production sequelize db:drop",
+    "create-prod": "cross-env NODE_ENV=production sequelize db:create",
+    "migrate-prod": "cross-env NODE_ENV=production sequelize db:migrate",
+    "reset:prod:db": ""
+
+
   },
   "cacheDirectories": [
     "node_modules",

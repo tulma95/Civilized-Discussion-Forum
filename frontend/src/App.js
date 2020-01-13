@@ -5,6 +5,7 @@ import CategoryList from './components/CategoryList'
 import threadService from './services/threadService'
 import SingleThread from './components/SingleThread'
 import { Route, Switch } from 'react-router-dom';
+import FileUpload from './components/FileUpload';
 
 
 const listOfCategories = ['videogames', 'politics', 'music']
@@ -51,9 +52,8 @@ function App() {
                 allThreads={threads}
                 setThreads={setThreads} />
             } />
-
+          <Route component={FileUpload} />
         </Switch>
-
       </div>
     </div>
   );
