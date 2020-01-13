@@ -1,17 +1,16 @@
 const postsRouter = require('express').Router()
 const { Post } = require('../database/models/index')
+const { uploadImage } = require('../utils/uploadImage')
 
 postsRouter.post('/', async (req, res) => {
   const body = req.body
 
-  // const imageUrl = await uploadImage(req.body.image)
-
-  const imageUrl = null
+  const imageUrl = await uploadImage(req.body.image)
   const newPost = {
     user_id: body.user_id,
     thread_id: body.thread_id,
     content: body.content,
-    image: imageUrl | ''
+    imageUrl
   }
 
   try {
