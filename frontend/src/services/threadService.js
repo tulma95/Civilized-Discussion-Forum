@@ -1,5 +1,4 @@
 const axios = require('axios')
-
 const baseUrl = '/api/threads'
 
 const getAllThreads = async () => {
@@ -13,12 +12,15 @@ const getThreadByCategory = async (category) => {
 }
 
 const createNewThread = async (category, title, creator, file, content) => {
+
   const data = {
     title,
     user_id: creator,
     image: file,
     content
   }
+
+
   return await axios.post(`${baseUrl}/${category}`, data)
 }
 
