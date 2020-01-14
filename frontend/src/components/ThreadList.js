@@ -13,6 +13,7 @@ const ThreadList = ({ category, setCategory, threads, setThreads }) => {
 
   return (
     <div>
+      <h1>{category}</h1>
       <NewThreadForm
         setThreads={setThreads}
         allThreads={threads}

@@ -17,7 +17,7 @@ const NewThreadForm = ({ setThreads, allThreads, category }) => {
     const creator = 1
     const newThread = await threadService.createNewThread(category, title, creator, file, content)
     const data = { ...newThread.data, posts: [] }
-    setThreads([...allThreads, data])
+    setThreads([data, ...allThreads])
     setTitle('')
     setContent('')
   }
