@@ -6,8 +6,8 @@ const FileUpload = ({ setFile }) => {
   const handleChange = (event) => {
     Resizer.imageFileResizer(
       event.target.files[0],
-      150,
-      150,
+      130,
+      130,
       'png',
       100,
       0,
