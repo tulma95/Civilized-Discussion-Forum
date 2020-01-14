@@ -4,6 +4,7 @@ const {
   Post,
   Thread
 } = require('../database/models/index')
+const { uploadImage } = require('../utils/uploadImage')
 
 require('dotenv').config()
 
