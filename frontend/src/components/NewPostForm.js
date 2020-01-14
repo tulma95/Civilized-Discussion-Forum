@@ -8,28 +8,28 @@ const NewPostForm = ({ allThreads, setThreads, threadId }) => {
   const [file, setFile] = useState('')
 
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    const creator = 1
-    const newPost = await postService.createNewPost(threadId, creator, file, content)
-    console.log(newPost);
-    const updatedThreads = allThreads.map(thread => {
-      if (thread.id === threadId) {
-        const newThread = { ...thread, posts: [...thread.posts, newPost] }
-        return newThread
-      }
-      return thread
-    })
-
-    setThreads(updatedThreads)
-    setContent('')
+    if (!event.detail || event.detail === 1) {
+      const creator = 1
+      const newPost = await postService.createNewPost(threadId, creator, file, content)
+      console.log(newPost);
+      const updatedThreads = allThreads.map(thread => {
+        if (thread.id === threadId) {
+          const newThread = { ...thread, posts: [...thread.posts, newPost] }
+          return newThread
+        }
+        return thread
+      })
+      setThreads(updatedThreads)
+      setContent('')
+    }
   }
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={e => { e.preventDefault() }}>
         <ContentTextArea content={content} setContent={setContent} />
         <FileUpload setFile={setFile} />
-        <button type="submit">Submit new post</button>
+        <button onClick={handleSubmit} type="submit">Submit new post</button>
       </form>
     </div>
   );

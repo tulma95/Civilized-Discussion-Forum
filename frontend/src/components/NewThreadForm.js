@@ -13,25 +13,28 @@ const NewThreadForm = ({ setThreads, allThreads, category }) => {
   }
 
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    const creator = 1
-    const newThread = await threadService.createNewThread(category, title, creator, file, content)
-    const data = { ...newThread.data, posts: [] }
-    setThreads([...allThreads, data])
-    setTitle('')
-    setContent('')
+    if (!event.detail || event.detail === 1) {
+      console.log(event.detail);
+
+      const creator = 1
+      const newThread = await threadService.createNewThread(category, title, creator, file, content)
+      const data = { ...newThread.data, posts: [] }
+      setThreads([data, ...allThreads])
+      setTitle('')
+      setContent('')
+    }
   }
 
   return (
     <div>
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={e => { e.preventDefault() }} >
         <div>
           Title
           <input onChange={handleTitleChange} value={title} placeholder='title' type="text" />
         </div>
         <FileUpload setFile={setFile} />
         <ContentTextArea content={content} setContent={setContent} />
-        <button type="submit">Create thread</button>
+        <button type="submit" onClick={handleSubmit}>Create thread</button>
       </form>
     </div>
   )

@@ -1,6 +1,5 @@
 const AWS = require('aws-sdk')
 const uuid = require('uuid/v4')
-const sharp = require('sharp')
 
 
 const uploadImage = async (base64Image) => {
@@ -13,7 +12,6 @@ const uploadImage = async (base64Image) => {
 
     const id = uuid()
 
-    const resizedData = sharp(base64Data).resize(120)
 
     AWS.config.update({
       region: REGION
@@ -23,7 +21,7 @@ const uploadImage = async (base64Image) => {
 
     const respo = await s3.upload({
       Bucket: BUCKET,
-      Body: resizedData,
+      Body: base64Data,
       Key: `${id}.${type}`,
       ACL: 'public-read',
       ContentType: 'image/png',

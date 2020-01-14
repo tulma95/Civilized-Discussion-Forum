@@ -17,7 +17,8 @@ test('renders single thread', () => {
 
   const component = render(
     <Router>
-      <ThreadList allThreads={threads} category={'music'} />
+      <ThreadList threads={threads} category={'music'}
+        setCategory={(category) => console.log(category)} />
     </Router>
   )
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Thread from './Thread'
 import NewPostForm from './NewPostForm'
 
