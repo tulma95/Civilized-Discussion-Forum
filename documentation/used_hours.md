@@ -7,6 +7,8 @@
 |11.01  | 6         |Thread can now be creater, trying to upload images|
 |12.01  | 5         |Create s3Bucket, new aws account, image upload finally works|
 |13.01  | 5         |Add frontend and backend to create and read posts, study react router more|
-|14.01| 2|Moved image resize to front, getting thrreads is different|
-|total | 35         |               |
+|14.01  | 2          |Moved image resize to front, getting thrreads is different|
+|16.01  | 1           | add validation to post content|
+
+|total | 36         |               |
 

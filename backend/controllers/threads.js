@@ -57,16 +57,14 @@ threadsRouter.get('/:category/:id', async (req, res) => {
   } catch (error) { }
 })
 
-threadsRouter.post('/:category', async (req, res) => {
+threadsRouter.post('/:category', async (req, res, next) => {
   const category = req.params.category
   const body = req.body
 
-
-  const imageUrl = await uploadImage(req.body.image)
-
+  const imageUrl = body.image.length === 0 ? null : await uploadImage(req.body.image)
 
   const newThread = {
-    title: body.title,
+    title: body.title.length === 0 ? body.content.slice(0, 15) : body.title,
     category,
     imageUrl,
     user_id: body.user_id,
@@ -74,7 +72,6 @@ threadsRouter.post('/:category', async (req, res) => {
   }
 
   try {
-
     const savedThread = await Thread.create(newThread)
     res.status(201).json(savedThread)
   } catch (error) {

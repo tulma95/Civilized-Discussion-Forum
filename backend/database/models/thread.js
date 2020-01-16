@@ -5,7 +5,15 @@ module.exports = (sequelize, DataTypes) => {
     user_id: DataTypes.INTEGER,
     category: DataTypes.STRING,
     imageUrl: DataTypes.STRING,
-    content: DataTypes.STRING
+    content: {
+      type: DataTypes.STRING,
+      validate: {
+        len: {
+          args: [15, 250],
+          msg: 'Content length must be between 15 and 250 character'
+        }
+      }
+    }
   }, {});
   Thread.associate = function (models) {
     Thread.belongsTo(models.User, {
