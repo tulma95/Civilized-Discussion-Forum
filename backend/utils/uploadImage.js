@@ -9,7 +9,6 @@ const uploadImage = async (base64Image) => {
     const REGION = process.env.REGION
     const base64Data = new Buffer.from(base64Image.replace(/^data:image\/\w+;base64,/, ""), 'base64');
     const type = base64Image.split(';')[0].split('/')[1];
-    console.log('upping pic')
     const id = uuid()
 
 

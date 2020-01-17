@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node backend/",
     "build": "cd frontend/ && npm install && npm run build",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000 --coverage",
     "watch": "cross-env NODE_ENV=development nodemon backend/",
     "seed": "sequelize db:seed:all",
     "seed-prod": "cross-env NODE_ENV=production sequelize db:seed:all",
@@ -56,7 +56,6 @@
     "supertest": "^4.0.2"
   },
   "jest": {
-    "collectCoverage": true,
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
       "/node_modules/"

@@ -1,0 +1,27 @@
+POST http://localhost:3003/api/posts HTTP/1.1
+content-type: application/json
+
+{ 
+    "content": "pasdasda",
+    "user_id": "1",
+    "thread_id": 1,
+    "image": ""
+}
+
+###
+
+POST http://localhost:3003/api/threads/videogames HTTP/1.1
+content-type: application/json
+
+{ 
+    "title": "",
+    "content": "pasdasdaasdasdasd",
+    "user_id": "1",
+    "image": ""
+}
+
+
+###
+
+GET  http://localhost:3003/api/threads/videogames/1 HTTP/1.1
+content-type: application/json

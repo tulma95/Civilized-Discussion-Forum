@@ -54,7 +54,9 @@ threadsRouter.get('/:category/:id', async (req, res) => {
     } else {
       res.status(404).end()
     }
-  } catch (error) { }
+  } catch (error) {
+
+  }
 })
 
 threadsRouter.post('/:category', async (req, res, next) => {
@@ -75,8 +77,7 @@ threadsRouter.post('/:category', async (req, res, next) => {
     const savedThread = await Thread.create(newThread)
     res.status(201).json(savedThread)
   } catch (error) {
-    console.log(error)
-    res.json(error)
+    next(error)
   }
 })
 

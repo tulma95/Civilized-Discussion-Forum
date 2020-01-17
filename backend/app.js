@@ -3,14 +3,14 @@ const app = express()
 const threadsRouter = require('./controllers/threads')
 const postsRouter = require('./controllers/posts')
 const bodyParser = require('body-parser')
-const path = require('path')
+const { requestLogger, errorHandler } = require('./utils/middleware')
 
 app.use(bodyParser.urlencoded({
   extended: true,
   json: true
 }))
 app.use(bodyParser.json({ limit: '10mb' }))
-
+app.use(requestLogger)
 
 
 app.use(express.static('./frontend/build/'))
@@ -21,5 +21,5 @@ const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
 }
 app.use(unknownEndpoint)
-
+app.use(errorHandler)
 module.exports = app

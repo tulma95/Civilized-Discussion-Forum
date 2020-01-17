@@ -2,7 +2,7 @@ const postsRouter = require('express').Router()
 const { Post } = require('../database/models/index')
 const { uploadImage } = require('../utils/uploadImage')
 
-postsRouter.post('/', async (req, res) => {
+postsRouter.post('/', async (req, res, next) => {
   const body = req.body
 
   const imageUrl = body.image.length === 0 ? null : await uploadImage(body.image)
@@ -19,8 +19,7 @@ postsRouter.post('/', async (req, res) => {
     const savedPost = await Post.create(newPost)
     res.status(201).json(savedPost)
   } catch (error) {
-    console.log(error)
-    res.json(error)
+    next(error)
   }
 })
 
