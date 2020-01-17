@@ -11,19 +11,15 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json({ limit: '10mb' }))
 
-// app.get('/*', function (req, res) {
-//   res.sendFile(path.join(__dirname, '../frontend/build/index.html'), function (err) {
-//     if (err) {
-//       res.status(500).send(err)
-//     }
-//   })
-// })
 
-app.use('/', express.static('./frontend/build/'))
+
+app.use(express.static('./frontend/build/'))
 app.use('/api/threads', threadsRouter)
 app.use('/api/posts', postsRouter)
-app.get('*', function (request, response) {
-  response.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'))
-})
+
+const unknownEndpoint = (request, response) => {
+  response.status(404).send({ error: 'unknown endpoint' })
+}
+app.use(unknownEndpoint)
 
 module.exports = app

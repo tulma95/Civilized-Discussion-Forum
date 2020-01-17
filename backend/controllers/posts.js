@@ -5,7 +5,9 @@ const { uploadImage } = require('../utils/uploadImage')
 postsRouter.post('/', async (req, res) => {
   const body = req.body
 
-  const imageUrl = await uploadImage(req.body.image)
+  const imageUrl = body.image.length === 0 ? null : await uploadImage(body.image)
+
+
   const newPost = {
     user_id: body.user_id,
     thread_id: body.thread_id,
