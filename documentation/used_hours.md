@@ -9,6 +9,7 @@
 |13.01  | 5         |Add frontend and backend to create and read posts, study react router more|
 |14.01  | 2          |Moved image resize to front, getting thrreads is different|
 |16.01  | 1           | add validation to post content|
+|17.01  |3            |more backend tests   |
 
-|total | 36         |               |
-
+|total | 39         |               |
+a
