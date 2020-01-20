@@ -10,6 +10,6 @@
 |14.01  | 2          |Moved image resize to front, getting thrreads is different|
 |16.01  | 1           | add validation to post content|
 |17.01  |3            |more backend tests   |
+|20.01  |2            |Frontend tests|
+|total | 41        |               |
 
-|total | 39         |               |
-a

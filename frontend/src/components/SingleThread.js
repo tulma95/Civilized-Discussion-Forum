@@ -10,7 +10,6 @@ const SingleThread = ({ thread, setThreads, allThreads }) => {
 
   return (
     <div>
-      ----------------
       <Thread thread={thread} />
       <NewPostForm
         allThreads={allThreads}

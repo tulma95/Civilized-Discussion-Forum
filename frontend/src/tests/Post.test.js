@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import Post from '../components/Post'
 
 
-test('renders single post', () => {
+test('renders single post date', () => {
   const post = {
     id: 4,
     thread_id: 2,

@@ -11,7 +11,6 @@ const NewPostForm = ({ allThreads, setThreads, threadId }) => {
     if (!event.detail || event.detail === 1) {
       const creator = 1
       const newPost = await postService.createNewPost(threadId, creator, file, content)
-      console.log(newPost);
       const updatedThreads = allThreads.map(thread => {
         if (thread.id === threadId) {
           const newThread = { ...thread, posts: [...thread.posts, newPost] }
