@@ -14,6 +14,17 @@ const listOfCategories = ['videogames', 'politics', 'music']
 
 const App = (props) => {
 
+  const getThread = ({ params }) => {
+    const categoryAndIdMatch = ({ category, id }) => {
+      return (thread) => {
+        return thread.id === id * 1 && category === thread.category
+      }
+    }
+
+    const thread = props.threads.find(categoryAndIdMatch(params))
+    return thread
+  }
+
   return (
     <div className='container'>
       <Header />
@@ -29,12 +40,12 @@ const App = (props) => {
               />
             } />
 
-          {/* <Route exact path='/:category/:id'
+          <Route exact path='/:category/:id'
             render={({ match }) =>
               <SingleThread thread={getThread(match)}
                 allThreads={props.threads}
                 setThreads={props.addThread} />
-            } /> */}
+            } />
           <Route component={homeView} />
         </Switch>
       </div>

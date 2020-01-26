@@ -31,7 +31,8 @@ const ThreadList = (props) => {
       <h1 className='categoryHeader'>{category}</h1>
       <div className='createThreadForm'>
         <NewThreadForm
-          category={category} />
+          allThreads={props.threads}
+          setThreads={props.addThread} />
       </div>
       {props.threads.map(mapThreads)}
     </div>

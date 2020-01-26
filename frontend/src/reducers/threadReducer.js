@@ -1,7 +1,7 @@
 const threadReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_THREAD':
-      return [...state, action.data]
+      return [action.data, ...state]
     case 'FETCH_THREADS':
       return action.data
     default:

@@ -4,7 +4,7 @@ import FileUpload from './FileUpload'
 import ContentTextArea from './ContentTextArea'
 import './newThreadForm.css'
 
-const NewThreadForm = ({ setThreads, allThreads, category }) => {
+const NewThreadForm = ({ setThreads, category }) => {
   const [title, setTitle] = useState('')
   const [file, setFile] = useState('')
   const [content, setContent] = useState('')
@@ -18,7 +18,7 @@ const NewThreadForm = ({ setThreads, allThreads, category }) => {
       const creator = 1
       const newThread = await threadService.createNewThread(category, title, creator, file, content)
       const data = { ...newThread.data, posts: [] }
-      setThreads([data, ...allThreads])
+      setThreads(data)
       setTitle('')
       setContent('')
     }
