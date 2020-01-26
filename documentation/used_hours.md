@@ -12,5 +12,6 @@
 |17.01  |3            |more backend tests   |
 |20.01  |2            |Frontend tests|
 |25.01  |3            | Add more css |
-|total | 44        |               |
+|26.01  |3            | Make frontend use redux |
+|total | 47        |               |
 
