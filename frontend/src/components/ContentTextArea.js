@@ -1,4 +1,5 @@
 import React from 'react';
+import './contentTextArea.css'
 
 const ContentTextArea = ({ content, setContent }) => {
 

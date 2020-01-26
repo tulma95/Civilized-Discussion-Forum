@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import FileUpload from './components/FileUpload';
 import threadService from './services/threadService'
 import SingleThread from './components/SingleThread'
+import Header from './components/Header'
 
 
 const listOfCategories = ['videogames', 'politics', 'music']
@@ -40,10 +41,9 @@ function App() {
 
   return (
     <div className='container'>
-      <div className='itemA'>
-        <CategoryList list={listOfCategories} />
-      </div>
-      <div className='itemB'>
+      <Header />
+      <CategoryList list={listOfCategories} />
+      <div className='main'>
         <Switch>
           <Route exact path='/:category'
             render={({ match }) =>

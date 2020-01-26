@@ -25,3 +25,7 @@ content-type: application/json
 
 GET  http://localhost:3003/api/threads/videogames/1 HTTP/1.1
 content-type: application/json
+
+### 
+GET https://fasttrack.herokuapp.com HTTP/1.1
+Content-Type: application/json

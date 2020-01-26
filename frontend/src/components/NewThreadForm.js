@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import threadService from '../services/threadService'
 import FileUpload from './FileUpload'
 import ContentTextArea from './ContentTextArea'
+import './newThreadForm.css'
 
 const NewThreadForm = ({ setThreads, allThreads, category }) => {
   const [title, setTitle] = useState('')
@@ -26,15 +27,14 @@ const NewThreadForm = ({ setThreads, allThreads, category }) => {
   }
 
   return (
-    <div>
-      <form onSubmit={e => { e.preventDefault() }} >
+    <div className='threadFormContainer'>
+      <form className='threadForm' onSubmit={e => { e.preventDefault() }} >
         <div>
-          Title
-          <input onChange={handleTitleChange} value={title} placeholder='title' type="text" />
+          <input className='titleInput' onChange={handleTitleChange} value={title} placeholder='title' type="text" />
         </div>
-        <FileUpload setFile={setFile} />
         <ContentTextArea content={content} setContent={setContent} />
-        <button type="submit" onClick={handleSubmit}>Create thread</button>
+        <FileUpload setFile={setFile} />
+        <button className='submitButton' type="submit" onClick={handleSubmit}>Create thread</button>
       </form>
     </div>
   )
