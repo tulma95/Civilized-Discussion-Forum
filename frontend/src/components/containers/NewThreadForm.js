@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import threadService from '../services/threadService'
+import threadService from '../../services/threadService'
 import FileUpload from './FileUpload'
 import ContentTextArea from './ContentTextArea'
 import './newThreadForm.css'
@@ -15,8 +15,6 @@ const NewThreadForm = ({ setThreads, allThreads, category }) => {
 
   const handleSubmit = async (event) => {
     if (!event.detail || event.detail === 1) {
-      console.log(event.detail);
-
       const creator = 1
       const newThread = await threadService.createNewThread(category, title, creator, file, content)
       const data = { ...newThread.data, posts: [] }

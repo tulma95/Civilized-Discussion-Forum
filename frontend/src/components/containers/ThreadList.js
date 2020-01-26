@@ -1,6 +1,6 @@
 import React from 'react'
 import NewThreadForm from './NewThreadForm'
-import Thread from './Thread'
+import Thread from '../presentationals/Thread'
 import './threadList.css'
 
 

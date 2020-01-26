@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ContentTextArea from './ContentTextArea'
 import FileUpload from './FileUpload'
-import postService from '../services/postService'
+import postService from '../../services/postService'
 
 const NewPostForm = ({ allThreads, setThreads, threadId }) => {
   const [content, setContent] = useState('')

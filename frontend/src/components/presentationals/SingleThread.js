@@ -1,6 +1,6 @@
 import React from 'react';
 import Thread from './Thread'
-import NewPostForm from './NewPostForm'
+import NewPostForm from '../containers/NewPostForm'
 
 const SingleThread = ({ thread, setThreads, allThreads }) => {
 

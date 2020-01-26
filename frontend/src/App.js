@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import ThreadList from './components/ThreadList'
-import CategoryList from './components/CategoryList'
+import ThreadList from './components/containers/ThreadList'
+import CategoryList from './components/presentationals/CategoryList'
 import { Route, Switch } from 'react-router-dom';
-import FileUpload from './components/FileUpload';
+import FileUpload from './components/containers/FileUpload';
 import threadService from './services/threadService'
-import SingleThread from './components/SingleThread'
-import Header from './components/Header'
+import SingleThread from './components/presentationals/SingleThread'
+import Header from './components/presentationals/Header'
 
 
 const listOfCategories = ['videogames', 'politics', 'music']
@@ -43,6 +43,7 @@ function App() {
     <div className='container'>
       <Header />
       <CategoryList list={listOfCategories} />
+
       <div className='main'>
         <Switch>
           <Route exact path='/:category'
