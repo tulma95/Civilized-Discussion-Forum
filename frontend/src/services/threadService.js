@@ -8,9 +8,7 @@ const getAllThreads = async () => {
 
 const getThreadByCategory = async category => {
   const response = await axios.get(`${baseUrl}/${category}`)
-  console.log(response)
   const data = response.data
-  console.log(data)
   return data
 }
 
@@ -21,6 +19,7 @@ const createNewThread = async (category, title, creator, file, content) => {
     image: file,
     content
   }
+  console.log(category)
 
   return await axios.post(`${baseUrl}/${category}`, data)
 }

@@ -33,9 +33,8 @@ const App = props => {
           <Route
             exact
             path='/:category'
-            render={({ match }) => (
+            render={() => (
               <ThreadList
-                category={match.params.category}
                 threads={props.threads}
                 setThreads={props.addThread}
               />

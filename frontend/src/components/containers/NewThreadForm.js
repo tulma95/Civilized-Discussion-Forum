@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import threadService from '../../services/threadService'
 import FileUpload from './FileUpload'
+import { useParams } from 'react-router-dom'
 import ContentTextArea from './ContentTextArea'
 import './newThreadForm.css'
 
-const NewThreadForm = ({ setThreads, category }) => {
+const NewThreadForm = ({ setThreads }) => {
   const [title, setTitle] = useState('')
   const [file, setFile] = useState('')
   const [content, setContent] = useState('')
-
+  const { category } = useParams()
   const handleTitleChange = event => {
     setTitle(event.target.value)
   }
