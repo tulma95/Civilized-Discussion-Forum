@@ -9,14 +9,14 @@ const threadReducer = (state = [], action) => {
   }
 }
 
-export const fetchThreads = (threads) => {
+export const fetchThreads = threads => {
   return {
     type: 'FETCH_THREADS',
     data: threads
   }
 }
 
-export const addThread = (thread) => {
+export const addThread = thread => {
   return {
     type: 'ADD_THREAD',
     data: thread

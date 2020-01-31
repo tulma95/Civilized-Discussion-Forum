@@ -5,9 +5,11 @@ const CategoryList = ({ list }) => {
   return (
     <div className='catalog'>
       {list.map(category => (
-        <Link key={category} to={`/${category}`}>
-          <div>{category}</div>
-        </Link>
+        <div>
+          <Link data-cy={category} key={category} to={`/${category}`}>
+            {category}
+          </Link>
+        </div>
       ))}
     </div>
   )

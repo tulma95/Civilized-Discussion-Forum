@@ -2,15 +2,14 @@ import React from 'react'
 import { connect } from 'react-redux'
 import NewThreadForm from './NewThreadForm'
 import Thread from '../presentationals/Thread'
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
 import { addThread, fetchThreads } from '../../reducers/threadReducer'
 import threadService from '../../services/threadService'
 
 import './threadList.css'
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
-
-const ThreadList = (props) => {
+const ThreadList = props => {
   const { category } = useParams()
 
   useEffect(() => {
@@ -21,7 +20,7 @@ const ThreadList = (props) => {
     fetchThreads()
   }, [category])
 
-  const mapThreads = (thread) => {
+  const mapThreads = thread => {
     const threadWith3Post = { ...thread, posts: thread.posts.slice(-3) }
     return <Thread key={thread.id} thread={threadWith3Post} />
   }
@@ -32,25 +31,28 @@ const ThreadList = (props) => {
       <div className='createThreadForm'>
         <NewThreadForm
           allThreads={props.threads}
-          setThreads={props.addThread} />
+          setThreads={props.addThread}
+        />
       </div>
       {props.threads.map(mapThreads)}
     </div>
   )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-    threads: state.threads,
+    threads: state.threads
   }
 }
 
 const mapDispatchToProps = {
-  addThread, fetchThreads
+  addThread,
+  fetchThreads
 }
 
 const connectedThreadList = connect(
-  mapStateToProps, mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(ThreadList)
 
 export default connectedThreadList
