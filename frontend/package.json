@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cypress/code-coverage": "^1.11.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.1",
+    "istanbul-lib-coverage": "^3.0.0",
+    "nyc": "^15.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-image-file-resizer": "^0.2.1",
@@ -13,8 +16,9 @@
     "react-scripts": "3.3.0",
     "redux": "^4.0.5"
   },
+  "proxy": "http://localhost:3003",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -24,7 +28,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:3003/",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@cypress/instrument-cra": "^1.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "cypress": "^3.8.3"

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import NewThreadForm from './NewThreadForm'
 import Thread from '../presentationals/Thread'
@@ -7,18 +7,18 @@ import { addThread, fetchThreads } from '../../reducers/threadReducer'
 import threadService from '../../services/threadService'
 
 import './threadList.css'
-import { useEffect } from 'react'
 
 const ThreadList = props => {
   const { category } = useParams()
+  const propsFetch = props.fetchThreads
 
   useEffect(() => {
     const fetchThreads = async () => {
       const threads = await threadService.getThreadByCategory(category)
-      props.fetchThreads(threads)
+      propsFetch(threads)
     }
     fetchThreads()
-  }, [category])
+  }, [category, propsFetch])
 
   const mapThreads = thread => {
     const threadWith3Post = { ...thread, posts: thread.posts.slice(-3) }

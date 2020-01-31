@@ -1,18 +1,12 @@
-import React from 'react';
+import React from 'react'
 import './contentTextArea.css'
 
 const ContentTextArea = ({ content, setContent }) => {
-
-  const handleChange = (event) => {
+  const handleChange = event => {
     setContent(event.target.value)
   }
 
-  return (
-    <div>
-      <textarea value={content} onChange={handleChange} />
-    </div>
-  );
-};
+  return <textarea data-cy='textArea' value={content} onChange={handleChange} />
+}
 
-
-export default ContentTextArea;
+export default ContentTextArea

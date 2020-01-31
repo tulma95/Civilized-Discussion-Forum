@@ -45,11 +45,17 @@ const NewThreadForm = ({ setThreads, category }) => {
             value={title}
             placeholder='title'
             type='text'
+            data-cy='title'
           />
         </div>
         <ContentTextArea content={content} setContent={setContent} />
         <FileUpload setFile={setFile} />
-        <button className='submitButton' type='submit' onClick={handleSubmit}>
+        <button
+          data-cy='threadSubmit'
+          className='submitButton'
+          type='submit'
+          onClick={handleSubmit}
+        >
           Create thread
         </button>
       </form>

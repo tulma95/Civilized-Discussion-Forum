@@ -5,8 +5,8 @@ const CategoryList = ({ list }) => {
   return (
     <div className='catalog'>
       {list.map(category => (
-        <div>
-          <Link data-cy={category} key={category} to={`/${category}`}>
+        <div key={category}>
+          <Link data-cy={category} to={`/${category}`}>
             {category}
           </Link>
         </div>

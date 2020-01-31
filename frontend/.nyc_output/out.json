@@ -1,0 +1,3059 @@
+{
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\threadService.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\threadService.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 14
+        },
+        "end": {
+          "line": 1,
+          "column": 30
+        }
+      },
+      "1": {
+        "start": {
+          "line": 2,
+          "column": 16
+        },
+        "end": {
+          "line": 2,
+          "column": 30
+        }
+      },
+      "2": {
+        "start": {
+          "line": 4,
+          "column": 22
+        },
+        "end": {
+          "line": 7,
+          "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 5,
+          "column": 19
+        },
+        "end": {
+          "line": 5,
+          "column": 43
+        }
+      },
+      "4": {
+        "start": {
+          "line": 6,
+          "column": 2
+        },
+        "end": {
+          "line": 6,
+          "column": 22
+        }
+      },
+      "5": {
+        "start": {
+          "line": 9,
+          "column": 28
+        },
+        "end": {
+          "line": 12,
+          "column": 1
+        }
+      },
+      "6": {
+        "start": {
+          "line": 10,
+          "column": 19
+        },
+        "end": {
+          "line": 10,
+          "column": 60
+        }
+      },
+      "7": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 11,
+          "column": 22
+        }
+      },
+      "8": {
+        "start": {
+          "line": 14,
+          "column": 24
+        },
+        "end": {
+          "line": 25,
+          "column": 1
+        }
+      },
+      "9": {
+        "start": {
+          "line": 16,
+          "column": 15
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      },
+      "10": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 24,
+          "column": 57
+        }
+      },
+      "11": {
+        "start": {
+          "line": 28,
+          "column": 24
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "12": {
+        "start": {
+          "line": 29,
+          "column": 19
+        },
+        "end": {
+          "line": 29,
+          "column": 66
+        }
+      },
+      "13": {
+        "start": {
+          "line": 30,
+          "column": 2
+        },
+        "end": {
+          "line": 30,
+          "column": 22
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 22
+          },
+          "end": {
+            "line": 4,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 34
+          },
+          "end": {
+            "line": 7,
+            "column": 1
+          }
+        },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 9,
+            "column": 28
+          },
+          "end": {
+            "line": 9,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 48
+          },
+          "end": {
+            "line": 12,
+            "column": 1
+          }
+        },
+        "line": 9
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 24
+          },
+          "end": {
+            "line": 14,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 75
+          },
+          "end": {
+            "line": 25,
+            "column": 1
+          }
+        },
+        "line": 14
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 28,
+            "column": 24
+          },
+          "end": {
+            "line": 28,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 48
+          },
+          "end": {
+            "line": 31,
+            "column": 1
+          }
+        },
+        "line": 28
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 0,
+      "4": 0,
+      "5": 3,
+      "6": 2,
+      "7": 2,
+      "8": 3,
+      "9": 1,
+      "10": 1,
+      "11": 3,
+      "12": 0,
+      "13": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 2,
+      "2": 1,
+      "3": 0
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "bacc6e7cb8af8ae801f007de806bac9f38f48c4a"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\FileUpload.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\FileUpload.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 19
+        },
+        "end": {
+          "line": 26,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 6,
+          "column": 23
+        },
+        "end": {
+          "line": 19,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 7,
+          "column": 4
+        },
+        "end": {
+          "line": 18,
+          "column": 5
+        }
+      },
+      "3": {
+        "start": {
+          "line": 15,
+          "column": 8
+        },
+        "end": {
+          "line": 15,
+          "column": 20
+        }
+      },
+      "4": {
+        "start": {
+          "line": 21,
+          "column": 2
+        },
+        "end": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 19
+          },
+          "end": {
+            "line": 4,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 36
+          },
+          "end": {
+            "line": 26,
+            "column": 1
+          }
+        },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 23
+          },
+          "end": {
+            "line": 6,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 34
+          },
+          "end": {
+            "line": 19,
+            "column": 3
+          }
+        },
+        "line": 6
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 6
+          },
+          "end": {
+            "line": 14,
+            "column": 7
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 13
+          },
+          "end": {
+            "line": 16,
+            "column": 7
+          }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 66,
+      "2": 0,
+      "3": 0,
+      "4": 66
+    },
+    "f": {
+      "0": 66,
+      "1": 0,
+      "2": 0
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "c9991bc06c826ad96cdf36cbe841519418dbe54d"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ContentTextArea.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ContentTextArea.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 24
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 23
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 6,
+          "column": 4
+        },
+        "end": {
+          "line": 6,
+          "column": 34
+        }
+      },
+      "3": {
+        "start": {
+          "line": 9,
+          "column": 2
+        },
+        "end": {
+          "line": 9,
+          "column": 80
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 24
+          },
+          "end": {
+            "line": 4,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 53
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 23
+          },
+          "end": {
+            "line": 5,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 32
+          },
+          "end": {
+            "line": 7,
+            "column": 3
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 66,
+      "2": 32,
+      "3": 66
+    },
+    "f": {
+      "0": 66,
+      "1": 32
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "04e3f7522c2621b7d0d29b20cf434bca762f5d83"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewThreadForm.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewThreadForm.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 22
+        },
+        "end": {
+          "line": 64,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 28
+        },
+        "end": {
+          "line": 8,
+          "column": 40
+        }
+      },
+      "2": {
+        "start": {
+          "line": 9,
+          "column": 26
+        },
+        "end": {
+          "line": 9,
+          "column": 38
+        }
+      },
+      "3": {
+        "start": {
+          "line": 10,
+          "column": 32
+        },
+        "end": {
+          "line": 10,
+          "column": 44
+        }
+      },
+      "4": {
+        "start": {
+          "line": 12,
+          "column": 28
+        },
+        "end": {
+          "line": 14,
+          "column": 3
+        }
+      },
+      "5": {
+        "start": {
+          "line": 13,
+          "column": 4
+        },
+        "end": {
+          "line": 13,
+          "column": 32
+        }
+      },
+      "6": {
+        "start": {
+          "line": 16,
+          "column": 23
+        },
+        "end": {
+          "line": 31,
+          "column": 3
+        }
+      },
+      "7": {
+        "start": {
+          "line": 17,
+          "column": 4
+        },
+        "end": {
+          "line": 30,
+          "column": 5
+        }
+      },
+      "8": {
+        "start": {
+          "line": 18,
+          "column": 22
+        },
+        "end": {
+          "line": 18,
+          "column": 23
+        }
+      },
+      "9": {
+        "start": {
+          "line": 19,
+          "column": 24
+        },
+        "end": {
+          "line": 25,
+          "column": 7
+        }
+      },
+      "10": {
+        "start": {
+          "line": 26,
+          "column": 19
+        },
+        "end": {
+          "line": 26,
+          "column": 51
+        }
+      },
+      "11": {
+        "start": {
+          "line": 27,
+          "column": 6
+        },
+        "end": {
+          "line": 27,
+          "column": 22
+        }
+      },
+      "12": {
+        "start": {
+          "line": 28,
+          "column": 6
+        },
+        "end": {
+          "line": 28,
+          "column": 18
+        }
+      },
+      "13": {
+        "start": {
+          "line": 29,
+          "column": 6
+        },
+        "end": {
+          "line": 29,
+          "column": 20
+        }
+      },
+      "14": {
+        "start": {
+          "line": 33,
+          "column": 2
+        },
+        "end": {
+          "line": 63,
+          "column": 3
+        }
+      },
+      "15": {
+        "start": {
+          "line": 38,
+          "column": 10
+        },
+        "end": {
+          "line": 38,
+          "column": 28
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 22
+          },
+          "end": {
+            "line": 7,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 52
+          },
+          "end": {
+            "line": 64,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 28
+          },
+          "end": {
+            "line": 12,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 37
+          },
+          "end": {
+            "line": 14,
+            "column": 3
+          }
+        },
+        "line": 12
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 16,
+            "column": 23
+          },
+          "end": {
+            "line": 16,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 38
+          },
+          "end": {
+            "line": 31,
+            "column": 3
+          }
+        },
+        "line": 16
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 37,
+            "column": 18
+          },
+          "end": {
+            "line": 37,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 23
+          },
+          "end": {
+            "line": 39,
+            "column": 9
+          }
+        },
+        "line": 37
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 4
+          },
+          "end": {
+            "line": 30,
+            "column": 5
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 17,
+              "column": 4
+            },
+            "end": {
+              "line": 30,
+              "column": 5
+            }
+          },
+          {
+            "start": {
+              "line": 17,
+              "column": 4
+            },
+            "end": {
+              "line": 30,
+              "column": 5
+            }
+          }
+        ],
+        "line": 17
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 8
+          },
+          "end": {
+            "line": 17,
+            "column": 43
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 17,
+              "column": 8
+            },
+            "end": {
+              "line": 17,
+              "column": 21
+            }
+          },
+          {
+            "start": {
+              "line": 17,
+              "column": 25
+            },
+            "end": {
+              "line": 17,
+              "column": 43
+            }
+          }
+        ],
+        "line": 17
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 66,
+      "2": 66,
+      "3": 66,
+      "4": 66,
+      "5": 27,
+      "6": 66,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 66,
+      "15": 1
+    },
+    "f": {
+      "0": 66,
+      "1": 27,
+      "2": 1,
+      "3": 1
+    },
+    "b": {
+      "0": [
+        1,
+        0
+      ],
+      "1": [
+        1,
+        1
+      ]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "b72c7476ea240927ac5d3e9b232cfa2ebabb206c"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Post.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Post.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 13
+        },
+        "end": {
+          "line": 15,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 15
+        },
+        "end": {
+          "line": 4,
+          "column": 56
+        }
+      },
+      "2": {
+        "start": {
+          "line": 6,
+          "column": 2
+        },
+        "end": {
+          "line": 14,
+          "column": 3
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 13
+          },
+          "end": {
+            "line": 3,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 27
+          },
+          "end": {
+            "line": 15,
+            "column": 1
+          }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 0,
+      "2": 0
+    },
+    "f": {
+      "0": 0
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "a09ad7b2e70738594364419357c9afe567279726"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Thread.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Thread.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 15
+        },
+        "end": {
+          "line": 38,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 2
+        },
+        "end": {
+          "line": 9,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 8,
+          "column": 4
+        },
+        "end": {
+          "line": 8,
+          "column": 32
+        }
+      },
+      "3": {
+        "start": {
+          "line": 10,
+          "column": 2
+        },
+        "end": {
+          "line": 37,
+          "column": 3
+        }
+      },
+      "4": {
+        "start": {
+          "line": 32,
+          "column": 10
+        },
+        "end": {
+          "line": 32,
+          "column": 44
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 15
+          },
+          "end": {
+            "line": 6,
+            "column": 16
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 31
+          },
+          "end": {
+            "line": 38,
+            "column": 1
+          }
+        },
+        "line": 6
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 31,
+            "column": 26
+          },
+          "end": {
+            "line": 31,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 10
+          },
+          "end": {
+            "line": 32,
+            "column": 44
+          }
+        },
+        "line": 32
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 2
+          },
+          "end": {
+            "line": 9,
+            "column": 3
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 9,
+              "column": 3
+            }
+          },
+          {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 9,
+              "column": 3
+            }
+          }
+        ],
+        "line": 7
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 11
+          },
+          "end": {
+            "line": 23,
+            "column": 66
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 23,
+              "column": 11
+            },
+            "end": {
+              "line": 23,
+              "column": 26
+            }
+          },
+          {
+            "start": {
+              "line": 23,
+              "column": 30
+            },
+            "end": {
+              "line": 23,
+              "column": 66
+            }
+          }
+        ],
+        "line": 23
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0
+    },
+    "f": {
+      "0": 1,
+      "1": 0
+    },
+    "b": {
+      "0": [
+        0,
+        1
+      ],
+      "1": [
+        1,
+        0
+      ]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "36e061d6e354f0120387b926a6a85c2baecce4e6"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\reducers\\threadReducer.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\reducers\\threadReducer.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 22
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 2,
+          "column": 2
+        },
+        "end": {
+          "line": 9,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 4,
+          "column": 6
+        },
+        "end": {
+          "line": 4,
+          "column": 36
+        }
+      },
+      "3": {
+        "start": {
+          "line": 6,
+          "column": 6
+        },
+        "end": {
+          "line": 6,
+          "column": 24
+        }
+      },
+      "4": {
+        "start": {
+          "line": 8,
+          "column": 6
+        },
+        "end": {
+          "line": 8,
+          "column": 18
+        }
+      },
+      "5": {
+        "start": {
+          "line": 12,
+          "column": 28
+        },
+        "end": {
+          "line": 17,
+          "column": 1
+        }
+      },
+      "6": {
+        "start": {
+          "line": 13,
+          "column": 2
+        },
+        "end": {
+          "line": 16,
+          "column": 3
+        }
+      },
+      "7": {
+        "start": {
+          "line": 19,
+          "column": 25
+        },
+        "end": {
+          "line": 24,
+          "column": 1
+        }
+      },
+      "8": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 22
+          },
+          "end": {
+            "line": 1,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 46
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "line": 1
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 28
+          },
+          "end": {
+            "line": 12,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 39
+          },
+          "end": {
+            "line": 17,
+            "column": 1
+          }
+        },
+        "line": 12
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 25
+          },
+          "end": {
+            "line": 19,
+            "column": 26
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 35
+          },
+          "end": {
+            "line": 24,
+            "column": 1
+          }
+        },
+        "line": 19
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 23
+          },
+          "end": {
+            "line": 1,
+            "column": 33
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 1,
+              "column": 31
+            },
+            "end": {
+              "line": 1,
+              "column": 33
+            }
+          }
+        ],
+        "line": 1
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 2
+          },
+          "end": {
+            "line": 9,
+            "column": 3
+          }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": {
+              "line": 3,
+              "column": 4
+            },
+            "end": {
+              "line": 4,
+              "column": 36
+            }
+          },
+          {
+            "start": {
+              "line": 5,
+              "column": 4
+            },
+            "end": {
+              "line": 6,
+              "column": 24
+            }
+          },
+          {
+            "start": {
+              "line": 7,
+              "column": 4
+            },
+            "end": {
+              "line": 8,
+              "column": 18
+            }
+          }
+        ],
+        "line": 2
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 12,
+      "2": 1,
+      "3": 2,
+      "4": 9,
+      "5": 3,
+      "6": 2,
+      "7": 3,
+      "8": 1
+    },
+    "f": {
+      "0": 12,
+      "1": 2,
+      "2": 1
+    },
+    "b": {
+      "0": [
+        9
+      ],
+      "1": [
+        1,
+        2,
+        9
+      ]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "ff0216d7fc0a21c15ea53f6269ee080b4ff66163"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ThreadList.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ThreadList.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 12,
+          "column": 19
+        },
+        "end": {
+          "line": 40,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 13,
+          "column": 23
+        },
+        "end": {
+          "line": 13,
+          "column": 34
+        }
+      },
+      "2": {
+        "start": {
+          "line": 15,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 16
+        }
+      },
+      "3": {
+        "start": {
+          "line": 16,
+          "column": 25
+        },
+        "end": {
+          "line": 19,
+          "column": 5
+        }
+      },
+      "4": {
+        "start": {
+          "line": 17,
+          "column": 22
+        },
+        "end": {
+          "line": 17,
+          "column": 71
+        }
+      },
+      "5": {
+        "start": {
+          "line": 18,
+          "column": 6
+        },
+        "end": {
+          "line": 18,
+          "column": 33
+        }
+      },
+      "6": {
+        "start": {
+          "line": 20,
+          "column": 4
+        },
+        "end": {
+          "line": 20,
+          "column": 18
+        }
+      },
+      "7": {
+        "start": {
+          "line": 23,
+          "column": 21
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      },
+      "8": {
+        "start": {
+          "line": 24,
+          "column": 28
+        },
+        "end": {
+          "line": 24,
+          "column": 72
+        }
+      },
+      "9": {
+        "start": {
+          "line": 25,
+          "column": 4
+        },
+        "end": {
+          "line": 25,
+          "column": 62
+        }
+      },
+      "10": {
+        "start": {
+          "line": 28,
+          "column": 2
+        },
+        "end": {
+          "line": 39,
+          "column": 3
+        }
+      },
+      "11": {
+        "start": {
+          "line": 42,
+          "column": 24
+        },
+        "end": {
+          "line": 46,
+          "column": 1
+        }
+      },
+      "12": {
+        "start": {
+          "line": 43,
+          "column": 2
+        },
+        "end": {
+          "line": 45,
+          "column": 3
+        }
+      },
+      "13": {
+        "start": {
+          "line": 48,
+          "column": 27
+        },
+        "end": {
+          "line": 51,
+          "column": 1
+        }
+      },
+      "14": {
+        "start": {
+          "line": 53,
+          "column": 28
+        },
+        "end": {
+          "line": 56,
+          "column": 13
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 19
+          },
+          "end": {
+            "line": 12,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 28
+          },
+          "end": {
+            "line": 40,
+            "column": 1
+          }
+        },
+        "line": 12
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 12
+          },
+          "end": {
+            "line": 15,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 18
+          },
+          "end": {
+            "line": 21,
+            "column": 3
+          }
+        },
+        "line": 15
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 16,
+            "column": 25
+          },
+          "end": {
+            "line": 16,
+            "column": 26
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 37
+          },
+          "end": {
+            "line": 19,
+            "column": 5
+          }
+        },
+        "line": 16
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 23,
+            "column": 21
+          },
+          "end": {
+            "line": 23,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 31
+          },
+          "end": {
+            "line": 26,
+            "column": 3
+          }
+        },
+        "line": 23
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 42,
+            "column": 24
+          },
+          "end": {
+            "line": 42,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 42,
+            "column": 33
+          },
+          "end": {
+            "line": 46,
+            "column": 1
+          }
+        },
+        "line": 42
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 5,
+      "2": 5,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 5,
+      "8": 1,
+      "9": 1,
+      "10": 5,
+      "11": 3,
+      "12": 5,
+      "13": 3,
+      "14": 3
+    },
+    "f": {
+      "0": 5,
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 5
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "fc7db5562c31a929b8a80ea57dab34e82d0279e5"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\CategoryList.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\CategoryList.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 21
+        },
+        "end": {
+          "line": 16,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 8,
+          "column": 8
+        },
+        "end": {
+          "line": 12,
+          "column": 14
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 21
+          },
+          "end": {
+            "line": 4,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 35
+          },
+          "end": {
+            "line": 16,
+            "column": 1
+          }
+        },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 16
+          },
+          "end": {
+            "line": 7,
+            "column": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 8
+          },
+          "end": {
+            "line": 12,
+            "column": 14
+          }
+        },
+        "line": 8
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 6,
+      "2": 18
+    },
+    "f": {
+      "0": 6,
+      "1": 18
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "d62a0d201f85bd680216b4f6d50ed0050f4803d9"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\postService.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\postService.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 14
+        },
+        "end": {
+          "line": 1,
+          "column": 30
+        }
+      },
+      "1": {
+        "start": {
+          "line": 2,
+          "column": 16
+        },
+        "end": {
+          "line": 2,
+          "column": 28
+        }
+      },
+      "2": {
+        "start": {
+          "line": 5,
+          "column": 22
+        },
+        "end": {
+          "line": 14,
+          "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 6,
+          "column": 15
+        },
+        "end": {
+          "line": 11,
+          "column": 3
+        }
+      },
+      "4": {
+        "start": {
+          "line": 12,
+          "column": 19
+        },
+        "end": {
+          "line": 12,
+          "column": 55
+        }
+      },
+      "5": {
+        "start": {
+          "line": 13,
+          "column": 2
+        },
+        "end": {
+          "line": 13,
+          "column": 22
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 22
+          },
+          "end": {
+            "line": 5,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 66
+          },
+          "end": {
+            "line": 14,
+            "column": 1
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "f": {
+      "0": 0
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "b1f64b29a873373f1f003ad63012679fcbd2fa46"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewPostForm.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewPostForm.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 20
+        },
+        "end": {
+          "line": 35,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 32
+        },
+        "end": {
+          "line": 7,
+          "column": 44
+        }
+      },
+      "2": {
+        "start": {
+          "line": 8,
+          "column": 26
+        },
+        "end": {
+          "line": 8,
+          "column": 38
+        }
+      },
+      "3": {
+        "start": {
+          "line": 10,
+          "column": 23
+        },
+        "end": {
+          "line": 24,
+          "column": 3
+        }
+      },
+      "4": {
+        "start": {
+          "line": 11,
+          "column": 4
+        },
+        "end": {
+          "line": 23,
+          "column": 5
+        }
+      },
+      "5": {
+        "start": {
+          "line": 12,
+          "column": 22
+        },
+        "end": {
+          "line": 12,
+          "column": 23
+        }
+      },
+      "6": {
+        "start": {
+          "line": 13,
+          "column": 22
+        },
+        "end": {
+          "line": 13,
+          "column": 87
+        }
+      },
+      "7": {
+        "start": {
+          "line": 14,
+          "column": 29
+        },
+        "end": {
+          "line": 20,
+          "column": 8
+        }
+      },
+      "8": {
+        "start": {
+          "line": 15,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 9
+        }
+      },
+      "9": {
+        "start": {
+          "line": 16,
+          "column": 28
+        },
+        "end": {
+          "line": 16,
+          "column": 76
+        }
+      },
+      "10": {
+        "start": {
+          "line": 17,
+          "column": 10
+        },
+        "end": {
+          "line": 17,
+          "column": 26
+        }
+      },
+      "11": {
+        "start": {
+          "line": 19,
+          "column": 8
+        },
+        "end": {
+          "line": 19,
+          "column": 21
+        }
+      },
+      "12": {
+        "start": {
+          "line": 21,
+          "column": 6
+        },
+        "end": {
+          "line": 21,
+          "column": 32
+        }
+      },
+      "13": {
+        "start": {
+          "line": 22,
+          "column": 6
+        },
+        "end": {
+          "line": 22,
+          "column": 20
+        }
+      },
+      "14": {
+        "start": {
+          "line": 26,
+          "column": 2
+        },
+        "end": {
+          "line": 34,
+          "column": 4
+        }
+      },
+      "15": {
+        "start": {
+          "line": 28,
+          "column": 29
+        },
+        "end": {
+          "line": 28,
+          "column": 47
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 20
+          },
+          "end": {
+            "line": 6,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 62
+          },
+          "end": {
+            "line": 35,
+            "column": 1
+          }
+        },
+        "line": 6
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 23
+          },
+          "end": {
+            "line": 10,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 40
+          },
+          "end": {
+            "line": 24,
+            "column": 3
+          }
+        },
+        "line": 10
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 44
+          },
+          "end": {
+            "line": 14,
+            "column": 45
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 54
+          },
+          "end": {
+            "line": 20,
+            "column": 7
+          }
+        },
+        "line": 14
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 28,
+            "column": 22
+          },
+          "end": {
+            "line": 28,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 27
+          },
+          "end": {
+            "line": 28,
+            "column": 49
+          }
+        },
+        "line": 28
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 4
+          },
+          "end": {
+            "line": 23,
+            "column": 5
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 11,
+              "column": 4
+            },
+            "end": {
+              "line": 23,
+              "column": 5
+            }
+          },
+          {
+            "start": {
+              "line": 11,
+              "column": 4
+            },
+            "end": {
+              "line": 23,
+              "column": 5
+            }
+          }
+        ],
+        "line": 11
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 8
+          },
+          "end": {
+            "line": 11,
+            "column": 43
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 11,
+              "column": 8
+            },
+            "end": {
+              "line": 11,
+              "column": 21
+            }
+          },
+          {
+            "start": {
+              "line": 11,
+              "column": 25
+            },
+            "end": {
+              "line": 11,
+              "column": 43
+            }
+          }
+        ],
+        "line": 11
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 8
+          },
+          "end": {
+            "line": 18,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 15,
+              "column": 8
+            },
+            "end": {
+              "line": 18,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 15,
+              "column": 8
+            },
+            "end": {
+              "line": 18,
+              "column": 9
+            }
+          }
+        ],
+        "line": 15
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "b": {
+      "0": [
+        0,
+        0
+      ],
+      "1": [
+        0,
+        0
+      ],
+      "2": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "6294fe199df979b5eada00f73ecf9a6578acf82a"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\SingleThread.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\SingleThread.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 21
+        },
+        "end": {
+          "line": 20,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 2
+        },
+        "end": {
+          "line": 9,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 8,
+          "column": 4
+        },
+        "end": {
+          "line": 8,
+          "column": 29
+        }
+      },
+      "3": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 19,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 21
+          },
+          "end": {
+            "line": 5,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 61
+          },
+          "end": {
+            "line": 20,
+            "column": 1
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 2
+          },
+          "end": {
+            "line": 9,
+            "column": 3
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 9,
+              "column": 3
+            }
+          },
+          {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 9,
+              "column": 3
+            }
+          }
+        ],
+        "line": 7
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "f": {
+      "0": 0
+    },
+    "b": {
+      "0": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "8aa2a2a1d17af6dc0c578833ac298c0987261c3c"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Header.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Header.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 15
+        },
+        "end": {
+          "line": 9,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 2
+        },
+        "end": {
+          "line": 8,
+          "column": 3
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 15
+          },
+          "end": {
+            "line": 3,
+            "column": 16
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 21
+          },
+          "end": {
+            "line": 9,
+            "column": 1
+          }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 6
+    },
+    "f": {
+      "0": 6
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "939e17bc347282f5484bdd10526759dc305e544e"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\homeView.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\homeView.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 17
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 2
+        },
+        "end": {
+          "line": 9,
+          "column": 3
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 17
+          },
+          "end": {
+            "line": 3,
+            "column": 18
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 23
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 3
+    },
+    "f": {
+      "0": 3
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "a3d716470ea2359393f9efb12fd66cce105d3604"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\App.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\App.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 12,
+          "column": 25
+        },
+        "end": {
+          "line": 12,
+          "column": 60
+        }
+      },
+      "1": {
+        "start": {
+          "line": 14,
+          "column": 12
+        },
+        "end": {
+          "line": 61,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 15,
+          "column": 20
+        },
+        "end": {
+          "line": 24,
+          "column": 3
+        }
+      },
+      "3": {
+        "start": {
+          "line": 16,
+          "column": 31
+        },
+        "end": {
+          "line": 20,
+          "column": 5
+        }
+      },
+      "4": {
+        "start": {
+          "line": 17,
+          "column": 6
+        },
+        "end": {
+          "line": 19,
+          "column": 7
+        }
+      },
+      "5": {
+        "start": {
+          "line": 18,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 67
+        }
+      },
+      "6": {
+        "start": {
+          "line": 22,
+          "column": 19
+        },
+        "end": {
+          "line": 22,
+          "column": 65
+        }
+      },
+      "7": {
+        "start": {
+          "line": 23,
+          "column": 4
+        },
+        "end": {
+          "line": 23,
+          "column": 17
+        }
+      },
+      "8": {
+        "start": {
+          "line": 26,
+          "column": 2
+        },
+        "end": {
+          "line": 60,
+          "column": 3
+        }
+      },
+      "9": {
+        "start": {
+          "line": 37,
+          "column": 14
+        },
+        "end": {
+          "line": 41,
+          "column": 16
+        }
+      },
+      "10": {
+        "start": {
+          "line": 49,
+          "column": 14
+        },
+        "end": {
+          "line": 53,
+          "column": 16
+        }
+      },
+      "11": {
+        "start": {
+          "line": 63,
+          "column": 24
+        },
+        "end": {
+          "line": 67,
+          "column": 1
+        }
+      },
+      "12": {
+        "start": {
+          "line": 64,
+          "column": 2
+        },
+        "end": {
+          "line": 66,
+          "column": 3
+        }
+      },
+      "13": {
+        "start": {
+          "line": 69,
+          "column": 27
+        },
+        "end": {
+          "line": 71,
+          "column": 1
+        }
+      },
+      "14": {
+        "start": {
+          "line": 73,
+          "column": 21
+        },
+        "end": {
+          "line": 73,
+          "column": 70
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 12
+          },
+          "end": {
+            "line": 14,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 21
+          },
+          "end": {
+            "line": 61,
+            "column": 1
+          }
+        },
+        "line": 14
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 20
+          },
+          "end": {
+            "line": 15,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 36
+          },
+          "end": {
+            "line": 24,
+            "column": 3
+          }
+        },
+        "line": 15
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 16,
+            "column": 31
+          },
+          "end": {
+            "line": 16,
+            "column": 32
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 53
+          },
+          "end": {
+            "line": 20,
+            "column": 5
+          }
+        },
+        "line": 16
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 17,
+            "column": 13
+          },
+          "end": {
+            "line": 17,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 23
+          },
+          "end": {
+            "line": 19,
+            "column": 7
+          }
+        },
+        "line": 17
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 36,
+            "column": 20
+          },
+          "end": {
+            "line": 36,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 14
+          },
+          "end": {
+            "line": 41,
+            "column": 16
+          }
+        },
+        "line": 37
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 48,
+            "column": 20
+          },
+          "end": {
+            "line": 48,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 49,
+            "column": 14
+          },
+          "end": {
+            "line": 53,
+            "column": 16
+          }
+        },
+        "line": 49
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 63,
+            "column": 24
+          },
+          "end": {
+            "line": 63,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 63,
+            "column": 33
+          },
+          "end": {
+            "line": 67,
+            "column": 1
+          }
+        },
+        "line": 63
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 15
+          },
+          "end": {
+            "line": 18,
+            "column": 67
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 18,
+              "column": 15
+            },
+            "end": {
+              "line": 18,
+              "column": 35
+            }
+          },
+          {
+            "start": {
+              "line": 18,
+              "column": 39
+            },
+            "end": {
+              "line": 18,
+              "column": 67
+            }
+          }
+        ],
+        "line": 18
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 3,
+      "2": 6,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 6,
+      "9": 5,
+      "10": 0,
+      "11": 3,
+      "12": 6,
+      "13": 3,
+      "14": 3
+    },
+    "f": {
+      "0": 6,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5,
+      "5": 0,
+      "6": 6
+    },
+    "b": {
+      "0": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "9a5376b49005ffa3a7a5e52daa9b814ad12047ea"
+  },
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\index.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\index.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 12,
+          "column": 16
+        },
+        "end": {
+          "line": 14,
+          "column": 2
+        }
+      },
+      "1": {
+        "start": {
+          "line": 16,
+          "column": 14
+        },
+        "end": {
+          "line": 16,
+          "column": 34
+        }
+      },
+      "2": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 24,
+          "column": 35
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 3,
+      "1": 3,
+      "2": 3
+    },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "3ef5f848b4f56d9555eb4fb446bbc6d4cc059421"
+  }
+}
