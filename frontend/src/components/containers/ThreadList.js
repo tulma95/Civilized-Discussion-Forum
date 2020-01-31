@@ -14,15 +14,14 @@ const ThreadList = props => {
 
   useEffect(() => {
     const fetchThreads = async () => {
-      const threads = await threadService.getThreadByCategory(category)
+      const threads = await threadService.getThreadsByCategory(category)
       propsFetch(threads)
     }
     fetchThreads()
   }, [category, propsFetch])
 
   const mapThreads = thread => {
-    const threadWith3Post = { ...thread, posts: thread.posts.slice(-3) }
-    return <Thread key={thread.id} thread={threadWith3Post} />
+    return <Thread key={thread.id} thread={thread} />
   }
 
   return (

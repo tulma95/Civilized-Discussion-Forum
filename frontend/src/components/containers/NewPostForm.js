@@ -3,7 +3,7 @@ import ContentTextArea from './ContentTextArea'
 import FileUpload from './FileUpload'
 import postService from '../../services/postService'
 
-const NewPostForm = ({ allThreads, setThreads, threadId }) => {
+const NewPostForm = ({ thread, setThread }) => {
   const [content, setContent] = useState('')
   const [file, setFile] = useState('')
 
@@ -11,19 +11,13 @@ const NewPostForm = ({ allThreads, setThreads, threadId }) => {
     if (!event.detail || event.detail === 1) {
       const creator = 1
       const newPost = await postService.createNewPost(
-        threadId,
+        thread.id,
         creator,
         file,
         content
       )
-      const updatedThreads = allThreads.map(thread => {
-        if (thread.id === threadId) {
-          const newThread = { ...thread, posts: [...thread.posts, newPost] }
-          return newThread
-        }
-        return thread
-      })
-      setThreads(updatedThreads)
+      const updatedThread = { ...thread, posts: [...thread.posts, newPost] }
+      setThread(updatedThread)
       setContent('')
     }
   }

@@ -6,7 +6,7 @@ const getAllThreads = async () => {
   return response.data
 }
 
-const getThreadByCategory = async category => {
+const getThreadsByCategory = async category => {
   const response = await axios.get(`${baseUrl}/${category}`)
   const data = response.data
   return data
@@ -33,5 +33,5 @@ export default {
   getAllThreads,
   createNewThread,
   getSingleThread,
-  getThreadByCategory
+  getThreadsByCategory
 }

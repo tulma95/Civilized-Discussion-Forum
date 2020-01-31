@@ -4,8 +4,30 @@ const threadReducer = (state = [], action) => {
       return [action.data, ...state]
     case 'FETCH_THREADS':
       return action.data
+    case 'ADD_POST':
+      const news = updatedThreads(state, action.data)
+      return news
+    // return updatedThreads(state, action.data)
+
     default:
       return state
+  }
+}
+
+const updatedThreads = (state, post) => {
+  return state.map(thread => {
+    if (thread.id === post.threadId) {
+      const newThread = { ...thread, posts: [...thread.posts, post] }
+      return newThread
+    }
+    return thread
+  })
+}
+
+export const addPost = (post, threadId) => {
+  return {
+    type: 'ADD_POST',
+    data: post
   }
 }
 

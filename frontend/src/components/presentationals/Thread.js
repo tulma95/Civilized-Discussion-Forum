@@ -6,6 +6,7 @@ const Thread = ({ thread }) => {
   if (thread === undefined) {
     return <div>loading...</div>
   }
+
   return (
     <div key={thread.id} className='thread'>
       <div className='threadHeader'>
