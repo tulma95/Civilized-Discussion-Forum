@@ -45,5 +45,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "cypress": "^3.8.3"
+  },
+  "nyc": {
+    "report-dir": "cypress-coverage"
   }
 }

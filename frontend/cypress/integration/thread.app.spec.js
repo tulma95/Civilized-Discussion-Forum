@@ -25,10 +25,11 @@ describe('From front page ', function() {
     cy.contains('I like to play world of warcraft')
   })
 
-  it.only('new post can be added', function() {
+  it('new post can be added', function() {
     cy.get('[data-cy=videogames]').click()
     cy.get(`[data-cy='Top 5 games 2020']`).click()
     cy.get('[data-cy=textArea]').type('Must be the new warcraft 3 game')
     cy.get('[data-cy=postSubmit]').click()
+    cy.contains('Must be the new warcraft 3 game')
   })
 })

@@ -1,6 +1,6 @@
 {
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\threadService.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\threadService.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\threadService.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\threadService.js",
     "statementMap": {
       "0": {
         "start": {
@@ -55,7 +55,7 @@
       "5": {
         "start": {
           "line": 9,
-          "column": 28
+          "column": 29
         },
         "end": {
           "line": 13,
@@ -193,17 +193,17 @@
         "decl": {
           "start": {
             "line": 9,
-            "column": 28
+            "column": 29
           },
           "end": {
             "line": 9,
-            "column": 29
+            "column": 30
           }
         },
         "loc": {
           "start": {
             "line": 9,
-            "column": 46
+            "column": 47
           },
           "end": {
             "line": 13,
@@ -263,35 +263,35 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
+      "0": 3,
+      "1": 3,
+      "2": 3,
       "3": 0,
       "4": 0,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 1,
-      "14": 0,
-      "15": 0
+      "5": 3,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 3,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 3,
+      "14": 1,
+      "15": 1
     },
     "f": {
       "0": 0,
-      "1": 1,
-      "2": 0,
-      "3": 0
+      "1": 2,
+      "2": 1,
+      "3": 1
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "39861fa913d0890db914c7ae2738ba57a276760b"
+    "hash": "dcba8a536d51924da024e2669f37d20874cfc58b"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\FileUpload.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\FileUpload.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\FileUpload.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\FileUpload.js",
     "statementMap": {
       "0": {
         "start": {
@@ -420,23 +420,23 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 36,
+      "0": 3,
+      "1": 100,
       "2": 0,
       "3": 0,
-      "4": 36
+      "4": 100
     },
     "f": {
-      "0": 36,
+      "0": 100,
       "1": 0,
       "2": 0
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "618e777669f5207c4b2895779144ed403a2c73af"
+    "hash": "c9991bc06c826ad96cdf36cbe841519418dbe54d"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ContentTextArea.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ContentTextArea.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ContentTextArea.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ContentTextArea.js",
     "statementMap": {
       "0": {
         "start": {
@@ -531,21 +531,21 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 36,
-      "2": 31,
-      "3": 36
+      "0": 3,
+      "1": 100,
+      "2": 63,
+      "3": 100
     },
     "f": {
-      "0": 36,
-      "1": 31
+      "0": 100,
+      "1": 63
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "37d8bf3ded4b5e520a11b335214ea31e5f6317e3"
+    "hash": "04e3f7522c2621b7d0d29b20cf434bca762f5d83"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewThreadForm.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewThreadForm.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewThreadForm.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewThreadForm.js",
     "statementMap": {
       "0": {
         "start": {
@@ -891,45 +891,45 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 2,
-      "2": 2,
-      "3": 2,
-      "4": 2,
-      "5": 2,
-      "6": 0,
-      "7": 2,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 2,
-      "16": 0
+      "0": 3,
+      "1": 66,
+      "2": 66,
+      "3": 66,
+      "4": 66,
+      "5": 66,
+      "6": 27,
+      "7": 66,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 66,
+      "16": 1
     },
     "f": {
-      "0": 2,
-      "1": 0,
-      "2": 0,
-      "3": 0
+      "0": 66,
+      "1": 27,
+      "2": 1,
+      "3": 1
     },
     "b": {
       "0": [
-        0,
+        1,
         0
       ],
       "1": [
-        0,
-        0
+        1,
+        1
       ]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "2409aeb8abaf25932dc44201f83bdaad5b145409"
+    "hash": "696a0bafeb30a0eddff15e57f9921da21a867006"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Post.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Post.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Post.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Post.js",
     "statementMap": {
       "0": {
         "start": {
@@ -990,19 +990,19 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 0,
-      "2": 0
+      "0": 3,
+      "1": 1,
+      "2": 1
     },
     "f": {
-      "0": 0
+      "0": 1
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e6f713c3d9cc1108f4a39abf84105166130de208"
+    "hash": "c9aa2a44b4e9b4b46273369981aff9627a6398e9"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Thread.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Thread.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Thread.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Thread.js",
     "statementMap": {
       "0": {
         "start": {
@@ -1010,7 +1010,7 @@
           "column": 15
         },
         "end": {
-          "line": 33,
+          "line": 34,
           "column": 1
         }
       },
@@ -1036,21 +1036,21 @@
       },
       "3": {
         "start": {
-          "line": 9,
+          "line": 10,
           "column": 2
         },
         "end": {
-          "line": 32,
+          "line": 33,
           "column": 3
         }
       },
       "4": {
         "start": {
-          "line": 28,
+          "line": 29,
           "column": 10
         },
         "end": {
-          "line": 28,
+          "line": 29,
           "column": 44
         }
       }
@@ -1074,7 +1074,7 @@
             "column": 31
           },
           "end": {
-            "line": 33,
+            "line": 34,
             "column": 1
           }
         },
@@ -1084,25 +1084,25 @@
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 27,
+            "line": 28,
             "column": 26
           },
           "end": {
-            "line": 27,
+            "line": 28,
             "column": 27
           }
         },
         "loc": {
           "start": {
-            "line": 28,
+            "line": 29,
             "column": 10
           },
           "end": {
-            "line": 28,
+            "line": 29,
             "column": 44
           }
         },
-        "line": 28
+        "line": 29
       }
     },
     "branchMap": {
@@ -1145,11 +1145,11 @@
       "1": {
         "loc": {
           "start": {
-            "line": 21,
+            "line": 22,
             "column": 11
           },
           "end": {
-            "line": 21,
+            "line": 22,
             "column": 66
           }
         },
@@ -1157,54 +1157,54 @@
         "locations": [
           {
             "start": {
-              "line": 21,
+              "line": 22,
               "column": 11
             },
             "end": {
-              "line": 21,
+              "line": 22,
               "column": 26
             }
           },
           {
             "start": {
-              "line": 21,
+              "line": 22,
               "column": 30
             },
             "end": {
-              "line": 21,
+              "line": 22,
               "column": 66
             }
           }
         ],
-        "line": 21
+        "line": 22
       }
     },
     "s": {
-      "0": 1,
-      "1": 3,
+      "0": 3,
+      "1": 6,
       "2": 0,
-      "3": 3,
-      "4": 0
+      "3": 6,
+      "4": 1
     },
     "f": {
-      "0": 3,
-      "1": 0
+      "0": 6,
+      "1": 1
     },
     "b": {
       "0": [
         0,
-        3
+        6
       ],
       "1": [
-        3,
+        6,
         0
       ]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "868804d166557ce9307e54bbec5bd6ea81148f2f"
+    "hash": "573d878f853a1de408d0e7ab6b81d36452df73e8"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\reducers\\threadReducer.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\reducers\\threadReducer.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\reducers\\threadReducer.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\reducers\\threadReducer.js",
     "statementMap": {
       "0": {
         "start": {
@@ -1446,36 +1446,36 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 5,
+      "0": 3,
+      "1": 12,
       "2": 1,
-      "3": 1,
-      "4": 3,
-      "5": 1,
-      "6": 1,
-      "7": 1,
+      "3": 2,
+      "4": 9,
+      "5": 3,
+      "6": 2,
+      "7": 3,
       "8": 1
     },
     "f": {
-      "0": 5,
-      "1": 1,
+      "0": 12,
+      "1": 2,
       "2": 1
     },
     "b": {
       "0": [
-        3
+        9
       ],
       "1": [
         1,
-        1,
-        3
+        2,
+        9
       ]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "c3e823913ddaf356137a691588f29606e86cc7e9"
+    "hash": "ff0216d7fc0a21c15ea53f6269ee080b4ff66163"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ThreadList.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ThreadList.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ThreadList.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\ThreadList.js",
     "statementMap": {
       "0": {
         "start": {
@@ -1483,7 +1483,7 @@
           "column": 19
         },
         "end": {
-          "line": 40,
+          "line": 39,
           "column": 1
         }
       },
@@ -1534,7 +1534,7 @@
         },
         "end": {
           "line": 17,
-          "column": 71
+          "column": 72
         }
       },
       "6": {
@@ -1563,77 +1563,67 @@
           "column": 21
         },
         "end": {
-          "line": 26,
+          "line": 25,
           "column": 3
         }
       },
       "9": {
         "start": {
           "line": 24,
-          "column": 28
+          "column": 4
         },
         "end": {
           "line": 24,
-          "column": 72
+          "column": 53
         }
       },
       "10": {
         "start": {
-          "line": 25,
-          "column": 4
+          "line": 27,
+          "column": 2
         },
         "end": {
-          "line": 25,
-          "column": 62
+          "line": 38,
+          "column": 3
         }
       },
       "11": {
         "start": {
-          "line": 28,
-          "column": 2
+          "line": 41,
+          "column": 24
         },
         "end": {
-          "line": 39,
-          "column": 3
+          "line": 45,
+          "column": 1
         }
       },
       "12": {
         "start": {
           "line": 42,
-          "column": 24
+          "column": 2
         },
         "end": {
-          "line": 46,
-          "column": 1
+          "line": 44,
+          "column": 3
         }
       },
       "13": {
         "start": {
-          "line": 43,
-          "column": 2
+          "line": 47,
+          "column": 27
         },
         "end": {
-          "line": 45,
-          "column": 3
+          "line": 50,
+          "column": 1
         }
       },
       "14": {
         "start": {
-          "line": 48,
-          "column": 27
-        },
-        "end": {
-          "line": 51,
-          "column": 1
-        }
-      },
-      "15": {
-        "start": {
-          "line": 53,
+          "line": 52,
           "column": 28
         },
         "end": {
-          "line": 56,
+          "line": 55,
           "column": 13
         }
       }
@@ -1657,7 +1647,7 @@
             "column": 28
           },
           "end": {
-            "line": 40,
+            "line": 39,
             "column": 1
           }
         },
@@ -1729,7 +1719,7 @@
             "column": 31
           },
           "end": {
-            "line": 26,
+            "line": 25,
             "column": 3
           }
         },
@@ -1739,59 +1729,58 @@
         "name": "(anonymous_4)",
         "decl": {
           "start": {
-            "line": 42,
+            "line": 41,
             "column": 24
           },
           "end": {
-            "line": 42,
+            "line": 41,
             "column": 25
           }
         },
         "loc": {
           "start": {
-            "line": 42,
+            "line": 41,
             "column": 33
           },
           "end": {
-            "line": 46,
+            "line": 45,
             "column": 1
           }
         },
-        "line": 42
+        "line": 41
       }
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 2,
-      "2": 2,
-      "3": 2,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 2,
-      "12": 1,
-      "13": 2,
-      "14": 1,
-      "15": 1
+      "0": 3,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 5,
+      "9": 4,
+      "10": 5,
+      "11": 3,
+      "12": 5,
+      "13": 3,
+      "14": 3
     },
     "f": {
-      "0": 2,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 2
+      "0": 5,
+      "1": 2,
+      "2": 2,
+      "3": 4,
+      "4": 5
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "6a2d70a9e14633a2b20e8f1441ea7acb0b941592"
+    "hash": "32be2d6960f670bcd98913e13cd0c121b873831d"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\CategoryList.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\CategoryList.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\CategoryList.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\CategoryList.js",
     "statementMap": {
       "0": {
         "start": {
@@ -1876,7 +1865,7 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
+      "0": 3,
       "1": 3,
       "2": 9
     },
@@ -1886,10 +1875,10 @@
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "3fd375aabf8dd545cd021c05b7d2ad91b8ab7a42"
+    "hash": "d62a0d201f85bd680216b4f6d50ed0050f4803d9"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\postService.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\postService.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\postService.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\services\\postService.js",
     "statementMap": {
       "0": {
         "start": {
@@ -1980,9 +1969,9 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
+      "0": 3,
+      "1": 3,
+      "2": 3,
       "3": 1,
       "4": 1,
       "5": 1
@@ -1992,10 +1981,10 @@
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a0f8b89a591c64e7f5eed3c9ab570cea0a148202"
+    "hash": "b1f64b29a873373f1f003ad63012679fcbd2fa46"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewPostForm.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewPostForm.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewPostForm.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\containers\\NewPostForm.js",
     "statementMap": {
       "0": {
         "start": {
@@ -2003,7 +1992,7 @@
           "column": 20
         },
         "end": {
-          "line": 46,
+          "line": 40,
           "column": 1
         }
       },
@@ -2033,7 +2022,7 @@
           "column": 23
         },
         "end": {
-          "line": 29,
+          "line": 23,
           "column": 3
         }
       },
@@ -2043,7 +2032,7 @@
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 22,
           "column": 5
         }
       },
@@ -2070,90 +2059,50 @@
       "7": {
         "start": {
           "line": 19,
-          "column": 29
+          "column": 28
         },
         "end": {
-          "line": 25,
-          "column": 8
+          "line": 19,
+          "column": 76
         }
       },
       "8": {
         "start": {
           "line": 20,
-          "column": 8
+          "column": 6
         },
         "end": {
-          "line": 23,
-          "column": 9
+          "line": 20,
+          "column": 30
         }
       },
       "9": {
         "start": {
           "line": 21,
-          "column": 28
+          "column": 6
         },
         "end": {
           "line": 21,
-          "column": 76
+          "column": 20
         }
       },
       "10": {
         "start": {
-          "line": 22,
-          "column": 10
+          "line": 25,
+          "column": 2
         },
         "end": {
-          "line": 22,
-          "column": 26
+          "line": 39,
+          "column": 3
         }
       },
       "11": {
         "start": {
-          "line": 24,
-          "column": 8
-        },
-        "end": {
-          "line": 24,
-          "column": 21
-        }
-      },
-      "12": {
-        "start": {
-          "line": 26,
-          "column": 6
-        },
-        "end": {
-          "line": 26,
-          "column": 32
-        }
-      },
-      "13": {
-        "start": {
-          "line": 27,
-          "column": 6
-        },
-        "end": {
-          "line": 27,
-          "column": 20
-        }
-      },
-      "14": {
-        "start": {
-          "line": 31,
-          "column": 2
-        },
-        "end": {
-          "line": 45,
-          "column": 3
-        }
-      },
-      "15": {
-        "start": {
-          "line": 35,
+          "line": 29,
           "column": 10
         },
         "end": {
-          "line": 35,
+          "line": 29,
           "column": 28
         }
       }
@@ -2174,10 +2123,10 @@
         "loc": {
           "start": {
             "line": 6,
-            "column": 62
+            "column": 47
           },
           "end": {
-            "line": 46,
+            "line": 40,
             "column": 1
           }
         },
@@ -2201,7 +2150,7 @@
             "column": 38
           },
           "end": {
-            "line": 29,
+            "line": 23,
             "column": 3
           }
         },
@@ -2211,49 +2160,25 @@
         "name": "(anonymous_2)",
         "decl": {
           "start": {
-            "line": 19,
-            "column": 44
-          },
-          "end": {
-            "line": 19,
-            "column": 45
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 19,
-            "column": 54
-          },
-          "end": {
-            "line": 25,
-            "column": 7
-          }
-        },
-        "line": 19
-      },
-      "3": {
-        "name": "(anonymous_3)",
-        "decl": {
-          "start": {
-            "line": 34,
+            "line": 28,
             "column": 18
           },
           "end": {
-            "line": 34,
+            "line": 28,
             "column": 19
           }
         },
         "loc": {
           "start": {
-            "line": 34,
+            "line": 28,
             "column": 23
           },
           "end": {
-            "line": 36,
+            "line": 30,
             "column": 9
           }
         },
-        "line": 34
+        "line": 28
       }
     },
     "branchMap": {
@@ -2264,7 +2189,7 @@
             "column": 4
           },
           "end": {
-            "line": 28,
+            "line": 22,
             "column": 5
           }
         },
@@ -2276,7 +2201,7 @@
               "column": 4
             },
             "end": {
-              "line": 28,
+              "line": 22,
               "column": 5
             }
           },
@@ -2286,7 +2211,7 @@
               "column": 4
             },
             "end": {
-              "line": 28,
+              "line": 22,
               "column": 5
             }
           }
@@ -2328,46 +2253,10 @@
           }
         ],
         "line": 11
-      },
-      "2": {
-        "loc": {
-          "start": {
-            "line": 20,
-            "column": 8
-          },
-          "end": {
-            "line": 23,
-            "column": 9
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 20,
-              "column": 8
-            },
-            "end": {
-              "line": 23,
-              "column": 9
-            }
-          },
-          {
-            "start": {
-              "line": 20,
-              "column": 8
-            },
-            "end": {
-              "line": 23,
-              "column": 9
-            }
-          }
-        ],
-        "line": 20
       }
     },
     "s": {
-      "0": 1,
+      "0": 3,
       "1": 34,
       "2": 34,
       "3": 34,
@@ -2377,18 +2266,13 @@
       "7": 1,
       "8": 1,
       "9": 1,
-      "10": 1,
-      "11": 0,
-      "12": 1,
-      "13": 1,
-      "14": 34,
-      "15": 1
+      "10": 34,
+      "11": 1
     },
     "f": {
       "0": 34,
       "1": 1,
-      "2": 1,
-      "3": 1
+      "2": 1
     },
     "b": {
       "0": [
@@ -2398,46 +2282,42 @@
       "1": [
         1,
         1
-      ],
-      "2": [
-        1,
-        0
       ]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "8ea9ded412964ca5982feee0604373107e1937b5"
+    "hash": "dba3a3ed96968049cb2d3a0ff879675277c8efa2"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\SingleThread.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\SingleThread.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\SingleThread.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\SingleThread.js",
     "statementMap": {
       "0": {
         "start": {
-          "line": 5,
+          "line": 7,
           "column": 21
         },
         "end": {
-          "line": 20,
+          "line": 29,
           "column": 1
         }
       },
       "1": {
         "start": {
-          "line": 7,
-          "column": 2
+          "line": 8,
+          "column": 30
         },
         "end": {
-          "line": 9,
-          "column": 3
+          "line": 8,
+          "column": 40
         }
       },
       "2": {
         "start": {
-          "line": 8,
-          "column": 4
+          "line": 9,
+          "column": 27
         },
         "end": {
-          "line": 8,
-          "column": 29
+          "line": 9,
+          "column": 38
         }
       },
       "3": {
@@ -2446,8 +2326,78 @@
           "column": 2
         },
         "end": {
-          "line": 19,
+          "line": 17,
+          "column": 8
+        }
+      },
+      "4": {
+        "start": {
+          "line": 12,
+          "column": 24
+        },
+        "end": {
+          "line": 15,
+          "column": 5
+        }
+      },
+      "5": {
+        "start": {
+          "line": 13,
+          "column": 19
+        },
+        "end": {
+          "line": 13,
+          "column": 68
+        }
+      },
+      "6": {
+        "start": {
+          "line": 14,
+          "column": 6
+        },
+        "end": {
+          "line": 14,
+          "column": 21
+        }
+      },
+      "7": {
+        "start": {
+          "line": 16,
           "column": 4
+        },
+        "end": {
+          "line": 16,
+          "column": 17
+        }
+      },
+      "8": {
+        "start": {
+          "line": 19,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      },
+      "9": {
+        "start": {
+          "line": 20,
+          "column": 4
+        },
+        "end": {
+          "line": 20,
+          "column": 29
+        }
+      },
+      "10": {
+        "start": {
+          "line": 23,
+          "column": 2
+        },
+        "end": {
+          "line": 28,
+          "column": 3
         }
       }
     },
@@ -2456,36 +2406,84 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 5,
+            "line": 7,
             "column": 21
           },
           "end": {
-            "line": 5,
+            "line": 7,
             "column": 22
           }
         },
         "loc": {
           "start": {
-            "line": 5,
-            "column": 61
+            "line": 7,
+            "column": 27
           },
           "end": {
-            "line": 20,
+            "line": 29,
             "column": 1
           }
         },
-        "line": 5
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 12
+          },
+          "end": {
+            "line": 11,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 18
+          },
+          "end": {
+            "line": 17,
+            "column": 3
+          }
+        },
+        "line": 11
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 24
+          },
+          "end": {
+            "line": 12,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 36
+          },
+          "end": {
+            "line": 15,
+            "column": 5
+          }
+        },
+        "line": 12
       }
     },
     "branchMap": {
       "0": {
         "loc": {
           "start": {
-            "line": 7,
+            "line": 19,
             "column": 2
           },
           "end": {
-            "line": 9,
+            "line": 21,
             "column": 3
           }
         },
@@ -2493,48 +2491,57 @@
         "locations": [
           {
             "start": {
-              "line": 7,
+              "line": 19,
               "column": 2
             },
             "end": {
-              "line": 9,
+              "line": 21,
               "column": 3
             }
           },
           {
             "start": {
-              "line": 7,
+              "line": 19,
               "column": 2
             },
             "end": {
-              "line": 9,
+              "line": 21,
               "column": 3
             }
           }
         ],
-        "line": 7
+        "line": 19
       }
     },
     "s": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
-      "3": 2
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 3,
+      "9": 1,
+      "10": 2
     },
     "f": {
-      "0": 2
+      "0": 3,
+      "1": 1,
+      "2": 1
     },
     "b": {
       "0": [
-        0,
+        1,
         2
       ]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "7fd6b0e83b5072c02b4d759d4b4fb71cad3fd922"
+    "hash": "ee97f594230b7293afbb5837776adcad4bf06c11"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Header.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Header.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Header.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\Header.js",
     "statementMap": {
       "0": {
         "start": {
@@ -2585,7 +2592,7 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
+      "0": 3,
       "1": 3
     },
     "f": {
@@ -2593,10 +2600,10 @@
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "389717d3f2262465a082939b286a6cc1c66eb872"
+    "hash": "939e17bc347282f5484bdd10526759dc305e544e"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\homeView.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\homeView.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\homeView.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\components\\presentationals\\homeView.js",
     "statementMap": {
       "0": {
         "start": {
@@ -2647,167 +2654,47 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1
+      "0": 3,
+      "1": 3
     },
     "f": {
-      "0": 1
+      "0": 3
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "348ca8c75b78b476d2023b6f5725b790eee5b9f0"
+    "hash": "a3d716470ea2359393f9efb12fd66cce105d3604"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\App.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\App.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\App.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\App.js",
     "statementMap": {
       "0": {
         "start": {
-          "line": 12,
+          "line": 10,
           "column": 25
         },
         "end": {
-          "line": 12,
+          "line": 10,
           "column": 60
         }
       },
       "1": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 12
         },
         "end": {
-          "line": 60,
+          "line": 27,
           "column": 1
         }
       },
       "2": {
         "start": {
-          "line": 15,
-          "column": 20
+          "line": 13,
+          "column": 2
         },
         "end": {
-          "line": 24,
-          "column": 3
-        }
-      },
-      "3": {
-        "start": {
-          "line": 16,
-          "column": 31
-        },
-        "end": {
-          "line": 20,
-          "column": 5
-        }
-      },
-      "4": {
-        "start": {
-          "line": 17,
-          "column": 6
-        },
-        "end": {
-          "line": 19,
-          "column": 7
-        }
-      },
-      "5": {
-        "start": {
-          "line": 18,
-          "column": 8
-        },
-        "end": {
-          "line": 18,
-          "column": 67
-        }
-      },
-      "6": {
-        "start": {
-          "line": 22,
-          "column": 19
-        },
-        "end": {
-          "line": 22,
-          "column": 65
-        }
-      },
-      "7": {
-        "start": {
-          "line": 23,
-          "column": 4
-        },
-        "end": {
-          "line": 23,
-          "column": 17
-        }
-      },
-      "8": {
-        "start": {
           "line": 26,
-          "column": 2
-        },
-        "end": {
-          "line": 59,
           "column": 3
-        }
-      },
-      "9": {
-        "start": {
-          "line": 37,
-          "column": 14
-        },
-        "end": {
-          "line": 40,
-          "column": 16
-        }
-      },
-      "10": {
-        "start": {
-          "line": 48,
-          "column": 14
-        },
-        "end": {
-          "line": 52,
-          "column": 16
-        }
-      },
-      "11": {
-        "start": {
-          "line": 62,
-          "column": 24
-        },
-        "end": {
-          "line": 66,
-          "column": 1
-        }
-      },
-      "12": {
-        "start": {
-          "line": 63,
-          "column": 2
-        },
-        "end": {
-          "line": 65,
-          "column": 3
-        }
-      },
-      "13": {
-        "start": {
-          "line": 68,
-          "column": 27
-        },
-        "end": {
-          "line": 70,
-          "column": 1
-        }
-      },
-      "14": {
-        "start": {
-          "line": 72,
-          "column": 21
-        },
-        "end": {
-          "line": 72,
-          "column": 70
         }
       }
     },
@@ -2816,246 +2703,42 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 14,
+            "line": 12,
             "column": 12
           },
           "end": {
-            "line": 14,
+            "line": 12,
             "column": 13
           }
         },
         "loc": {
           "start": {
-            "line": 14,
-            "column": 21
+            "line": 12,
+            "column": 18
           },
           "end": {
-            "line": 60,
+            "line": 27,
             "column": 1
           }
         },
-        "line": 14
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 15,
-            "column": 20
-          },
-          "end": {
-            "line": 15,
-            "column": 21
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 15,
-            "column": 36
-          },
-          "end": {
-            "line": 24,
-            "column": 3
-          }
-        },
-        "line": 15
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": {
-            "line": 16,
-            "column": 31
-          },
-          "end": {
-            "line": 16,
-            "column": 32
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 16,
-            "column": 53
-          },
-          "end": {
-            "line": 20,
-            "column": 5
-          }
-        },
-        "line": 16
-      },
-      "3": {
-        "name": "(anonymous_3)",
-        "decl": {
-          "start": {
-            "line": 17,
-            "column": 13
-          },
-          "end": {
-            "line": 17,
-            "column": 14
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 17,
-            "column": 23
-          },
-          "end": {
-            "line": 19,
-            "column": 7
-          }
-        },
-        "line": 17
-      },
-      "4": {
-        "name": "(anonymous_4)",
-        "decl": {
-          "start": {
-            "line": 36,
-            "column": 20
-          },
-          "end": {
-            "line": 36,
-            "column": 21
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 37,
-            "column": 14
-          },
-          "end": {
-            "line": 40,
-            "column": 16
-          }
-        },
-        "line": 37
-      },
-      "5": {
-        "name": "(anonymous_5)",
-        "decl": {
-          "start": {
-            "line": 47,
-            "column": 20
-          },
-          "end": {
-            "line": 47,
-            "column": 21
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 48,
-            "column": 14
-          },
-          "end": {
-            "line": 52,
-            "column": 16
-          }
-        },
-        "line": 48
-      },
-      "6": {
-        "name": "(anonymous_6)",
-        "decl": {
-          "start": {
-            "line": 62,
-            "column": 24
-          },
-          "end": {
-            "line": 62,
-            "column": 25
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 62,
-            "column": 33
-          },
-          "end": {
-            "line": 66,
-            "column": 1
-          }
-        },
-        "line": 62
+        "line": 12
       }
     },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 18,
-            "column": 15
-          },
-          "end": {
-            "line": 18,
-            "column": 67
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 18,
-              "column": 15
-            },
-            "end": {
-              "line": 18,
-              "column": 35
-            }
-          },
-          {
-            "start": {
-              "line": 18,
-              "column": 39
-            },
-            "end": {
-              "line": 18,
-              "column": 67
-            }
-          }
-        ],
-        "line": 18
-      }
-    },
+    "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 3,
-      "3": 2,
-      "4": 2,
-      "5": 3,
-      "6": 2,
-      "7": 2,
-      "8": 3,
-      "9": 2,
-      "10": 2,
-      "11": 1,
-      "12": 3,
-      "13": 1,
-      "14": 1
+      "0": 3,
+      "1": 3,
+      "2": 3
     },
     "f": {
-      "0": 3,
-      "1": 2,
-      "2": 2,
-      "3": 3,
-      "4": 2,
-      "5": 2,
-      "6": 3
+      "0": 3
     },
-    "b": {
-      "0": [
-        3,
-        2
-      ]
-    },
+    "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "096e36d966622e78c802cb12e735149e6a6c522a"
+    "hash": "4afe6c4dd74668359efe7b17a5dc7a382901ebbe"
   },
-  "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\index.js": {
-    "path": "C:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\index.js",
+  "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\index.js": {
+    "path": "c:\\Users\\Riku\\Civilized-Discussion-Forum\\frontend\\src\\index.js",
     "statementMap": {
       "0": {
         "start": {
@@ -3091,13 +2774,13 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1
+      "0": 3,
+      "1": 3,
+      "2": 3
     },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "ec2e04398faa9f921715648583460f17b0ef680b"
+    "hash": "3ef5f848b4f56d9555eb4fb446bbc6d4cc059421"
   }
 }
