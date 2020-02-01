@@ -8,7 +8,7 @@
     "start:test": "cross-env NODE_ENV=test node backend/",
     "build": "cd frontend/ && npm install && npm run build",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000 --coverage",
-    "test:cy": "start-server-and-test start:test http://localhost:3003 test:front",
+    "test:cy": "start-server-and-test start:test http://localhost:3005 test:front",
     "test:front": "cd frontend/ && npm run test:cy",
     "watch": "cross-env NODE_ENV=development nodemon backend/",
     "seed": "sequelize db:seed:all",
