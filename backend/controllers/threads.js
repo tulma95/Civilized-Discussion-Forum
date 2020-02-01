@@ -1,6 +1,7 @@
 const threadsRouter = require('express').Router()
 const { User, Post, Thread } = require('../database/models/index')
 const { uploadImage } = require('../utils/uploadImage')
+const sequelize = require('sequelize')
 
 require('dotenv').config()
 
@@ -26,9 +27,12 @@ threadsRouter.get('/:category', async (req, res) => {
       {
         model: Post,
         as: 'posts',
-        limit: 3
+
+        limit: 3,
+        order: [['updatedAt', 'DESC']]
       }
     ],
+
     order: [['updatedAt', 'DESC']]
   })
   res.status(200).json(threads)

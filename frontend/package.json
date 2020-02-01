@@ -22,8 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:coverage": "npm test -- --coverage --watchAll=false",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:cy": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,7 +45,8 @@
     "@cypress/instrument-cra": "^1.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
-    "cypress": "^3.8.3"
+    "cypress": "^3.8.3",
+    "start-server-and-test": "^1.10.8"
   },
   "nyc": {
     "report-dir": "cypress-coverage"

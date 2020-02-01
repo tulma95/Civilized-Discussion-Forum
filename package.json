@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node backend/",
-    "start:test": "npm run pretest && cross-env NODE_ENV=test nodemon backend/",
+    "start:test": "cross-env NODE_ENV=test node backend/ &",
     "build": "cd frontend/ && npm install && npm run build",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000 --coverage",
+    "test:cy": "start npm run start:test && cd frontend && npm run test:cy",
     "watch": "cross-env NODE_ENV=development nodemon backend/",
     "seed": "sequelize db:seed:all",
     "migrate": "sequelize db:migrate",
