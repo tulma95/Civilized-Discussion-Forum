@@ -2,29 +2,26 @@ import React from 'react'
 import Post from './Post'
 import { Link } from 'react-router-dom'
 
-
 const Thread = ({ thread }) => {
   if (thread === undefined) {
     return <div>loading...</div>
   }
+
   return (
     <div key={thread.id} className='thread'>
-
       <div className='threadHeader'>
-        <Link to={`/${thread.category}/${thread.id}`}>
-          <h1 className='threadTitle'>
+        <h1 className='threadTitle'>
+          <Link data-cy={thread.title} to={`/${thread.category}/${thread.id}`}>
             {thread.title}
-          </h1>
-        </Link>
+          </Link>
+        </h1>
       </div>
 
       <div className='threadContent'>
         <div className='thredContentImage'>
           {thread.imageUrl && <img src={thread.imageUrl} alt='' />}
         </div>
-        <div className='theadContentText'>
-          {thread.content}
-        </div>
+        <div className='theadContentText'>{thread.content}</div>
       </div>
 
       <div className='posts'>
@@ -32,7 +29,6 @@ const Thread = ({ thread }) => {
           <Post key={post.id} post={post} />
         ))}
       </div>
-
     </div>
   )
 }

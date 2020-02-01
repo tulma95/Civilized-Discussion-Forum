@@ -1,0 +1,27 @@
+.threadFormContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.threadForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.threadForm>div {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  margin: 0 20px 0 20px;
+}
+
+.titleInput {
+  width: 80%;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(169, 169, 169);
+}

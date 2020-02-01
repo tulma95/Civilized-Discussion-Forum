@@ -4,24 +4,25 @@ on: [push]
 
 jobs:
   vm-job:
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-16.04
 
-      services:
-        postgres:
-          image: postgres:10.8
-          env:
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-            POSTGRES_DB: testdb
-          ports:
+    services:
+      postgres:
+        image: postgres:10.8
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: testdb
+        ports:
           # will assign a random free host port
           - 5432/tcp
-          # needed because the postgres container does not provide a healthcheck
-          options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+        # needed because the postgres container does not provide a healthcheck
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
-      steps:
-      - uses: actions/checkout@v1     
+    steps:
+      - uses: actions/checkout@v1
       - run: npm ci
+      - run: cd frontend && npm ci
       - name: backend test and generate coverage
         run: npm run test
         env:
@@ -30,10 +31,13 @@ jobs:
           TEST_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:${{ job.services.postgres.ports[5432] }}/testdb
 
       - name: frontend test and generate coverage
-        run: cd frontend && npm ci && npm run test:coverage
+        run: npm run test:cy
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }} # get randomly assigned published port
+          TEST_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:${{ job.services.postgres.ports[5432] }}/testdb
 
-
-      - name: Upload backend coverage to Codecov  
+      - name: Upload backend coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -42,13 +46,11 @@ jobs:
           name: codecov-umbrella
           fail_ci_if_error: true
 
-      - name: Upload frontend coverage to Codecov  
+      - name: Upload frontend coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./frontend/coverage/clover.xml
+          file: ./frontend/cypress-coverage/clover.xml
           flags: backendunittests
           name: codecov-umbrella
           fail_ci_if_error: true
-
-        

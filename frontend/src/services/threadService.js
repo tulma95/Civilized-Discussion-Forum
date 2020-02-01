@@ -6,24 +6,23 @@ const getAllThreads = async () => {
   return response.data
 }
 
-const getThreadByCategory = async (category) => {
+const getThreadsByCategory = async category => {
   const response = await axios.get(`${baseUrl}/${category}`)
-  return response.data
+  const data = response.data
+  return data
 }
 
 const createNewThread = async (category, title, creator, file, content) => {
-
   const data = {
     title,
     user_id: creator,
     image: file,
     content
   }
-
+  console.log(category)
 
   return await axios.post(`${baseUrl}/${category}`, data)
 }
-
 
 const getSingleThread = async (category, id) => {
   const response = await axios.get(`${baseUrl}/${category}/${id}`)
@@ -34,5 +33,5 @@ export default {
   getAllThreads,
   createNewThread,
   getSingleThread,
-  getThreadByCategory
+  getThreadsByCategory
 }

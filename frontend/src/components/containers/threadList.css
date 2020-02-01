@@ -1,0 +1,12 @@
+.categoryHeader {
+  text-align: center;
+  margin: 0;
+}
+
+.createThreadForm {}
+
+.threadList {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
