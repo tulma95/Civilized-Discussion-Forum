@@ -2,6 +2,7 @@
   margin: 50px;
   display: grid;
   grid-template-columns: 150px auto;
+  background-color: lightgray;
   grid-template-areas:
     'header header'
     'catalog main';
@@ -14,20 +15,20 @@
 .header {
   grid-area: header;
   text-align: center;
+  border: 2px solid black;
+  border-bottom: 0px;
 }
 
 .main {
   grid-area: main;
   border: 2px solid black;
-  height: 200vh;
-  background-color: lightgray;
 }
 
 .catalog {
   grid-area: catalog;
   border: 2px solid black;
+  border-right-width: 0px;
   background-color: lightgray;
-  height: 100%;
   padding-left: 10px;
 }
 
@@ -58,6 +59,7 @@
 .postInfo {
   padding: 3px 3px 3px 10px;
   background-color: grey;
+  border-bottom: 1px black solid;
 }
 
 .post {
