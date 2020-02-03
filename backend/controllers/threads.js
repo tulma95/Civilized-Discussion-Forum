@@ -1,7 +1,6 @@
 const threadsRouter = require('express').Router()
 const { User, Post, Thread } = require('../database/models/index')
 const { uploadImage } = require('../utils/uploadImage')
-const sequelize = require('sequelize')
 
 require('dotenv').config()
 

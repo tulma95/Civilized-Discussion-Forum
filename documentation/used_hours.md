@@ -14,4 +14,5 @@
 | 25.01 | 3     | Add more css                                                               |
 | 26.01 | 3     | Make frontend use redux                                                    |
 | 29.01 | 6     | Add cypress tests, refactor code, fix bugs                                 |
-| total | 53    |                                                                            |
+| 01.02 | 2     | Make github actions run cypress tests                                      |
+| total | 55    |                                                                            |
