@@ -23,15 +23,21 @@ const NewPostForm = ({ thread, setThread }) => {
   }
 
   return (
-    <div>
+    <div className='threadFormContainer'>
       <form
+        className='threadForm'
         onSubmit={e => {
           e.preventDefault()
         }}
       >
         <ContentTextArea content={content} setContent={setContent} />
         <FileUpload setFile={setFile} />
-        <button data-cy='postSubmit' onClick={handleSubmit} type='submit'>
+        <button
+          className='submitButton'
+          data-cy='postSubmit'
+          onClick={handleSubmit}
+          type='submit'
+        >
           Submit new post
         </button>
       </form>

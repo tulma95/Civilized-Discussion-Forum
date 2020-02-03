@@ -15,9 +15,7 @@ const Header = () => {
         width='150px'
         alt='Logo by uberballo'
       />
-      <div className='logoHeader' style={{ display: 'inline' }}>
-        Civilized Discussion Forum
-      </div>
+      <div className='logoHeader'>Civilized Discussion Forum</div>
     </div>
   )
 }
