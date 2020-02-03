@@ -15,4 +15,5 @@
 | 26.01 | 3     | Make frontend use redux                                                    |
 | 29.01 | 6     | Add cypress tests, refactor code, fix bugs                                 |
 | 01.02 | 2     | Make github actions run cypress tests                                      |
-| total | 55    |                                                                            |
+| 03.02 | 4     | Logo, styling page, fixing bugs                                            |
+| total | 59    |                                                                            |
