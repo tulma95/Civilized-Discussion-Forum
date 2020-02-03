@@ -1,14 +1,19 @@
 .container {
   margin: 100px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 150px auto;
   grid-template-areas:
-    "header header"
-    "catalog main";
+    'header header'
+    'catalog main';
+}
+
+.logoHeader {
+  font-size: 50px;
 }
 
 .header {
   grid-area: header;
+  text-align: center;
 }
 
 .main {
@@ -23,6 +28,7 @@
   border: 2px solid black;
   background-color: lightgray;
   height: 100%;
+  padding-left: 10px;
 }
 
 .thread {
@@ -49,7 +55,6 @@
   vertical-align: top;
 }
 
-
 .info {
   justify-content: start;
   height: 20px;
@@ -59,10 +64,4 @@
 .post {
   border: 1px black solid;
   margin: 4px;
-}
-
-
-
-.categoryList {
-  padding: 10px;
 }
