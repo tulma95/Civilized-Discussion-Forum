@@ -1,6 +1,6 @@
 import React from 'react'
 
-const homeView = () => {
+const HomeView = () => {
   return (
     <div>
       Welcome to the civilized discussion forum. Begin by choosing category from
@@ -9,4 +9,4 @@ const homeView = () => {
   )
 }
 
-export default homeView
+export default HomeView

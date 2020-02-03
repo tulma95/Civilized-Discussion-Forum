@@ -55,13 +55,13 @@
   vertical-align: top;
 }
 
-.info {
-  justify-content: start;
-  height: 20px;
+.postInfo {
+  padding: 3px 3px 3px 10px;
   background-color: grey;
 }
 
 .post {
   border: 1px black solid;
   margin: 4px;
+  overflow: hidden;
 }

@@ -14,7 +14,8 @@ const SingleThread = () => {
       setThread(data)
     }
     fetchThread()
-  }, [])
+    window.scrollTo(0, 0)
+  }, [category, id])
 
   if (thread === undefined) {
     return <div>loading</div>
