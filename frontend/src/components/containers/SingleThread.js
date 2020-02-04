@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Thread from './Thread'
-import NewPostForm from '../containers/NewPostForm'
+import Thread from '../presentationals/Thread'
+import NewPostForm from './NewPostForm'
 import { useParams } from 'react-router-dom'
 import threadService from '../../services/threadService'
 

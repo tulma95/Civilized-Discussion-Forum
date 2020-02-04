@@ -3,7 +3,7 @@ import './App.css'
 import ThreadList from './components/containers/ThreadList'
 import CategoryList from './components/presentationals/CategoryList'
 import { Route, Switch } from 'react-router-dom'
-import SingleThread from './components/presentationals/SingleThread'
+import SingleThread from './components/containers/SingleThread'
 import Header from './components/presentationals/Header'
 import homeView from './components/presentationals/homeView'
 
