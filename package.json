@@ -8,6 +8,7 @@
     "start:test": "cross-env NODE_ENV=test node backend/",
     "build": "cd frontend/ && npm install && npm run build",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000 --coverage",
+    "test:dev": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000 --watchAll",
     "test:cy": "start-server-and-test start:test http://localhost:3003/api/threads test:front",
     "test:front": "cd frontend/ && npm run test:cy",
     "watch": "cross-env NODE_ENV=development nodemon backend/",
@@ -41,6 +42,7 @@
   "homepage": "https://github.com/tulma95/Civilized-Discussion-Forum#readme",
   "dependencies": {
     "aws-sdk": "^2.610.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

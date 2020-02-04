@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const threadsRouter = require('./controllers/threads')
 const postsRouter = require('./controllers/posts')
+const usersRouter = require('./controllers/users')
 const bodyParser = require('body-parser')
 const { requestLogger, errorHandler } = require('./utils/middleware')
 
@@ -22,6 +23,7 @@ if (process.env.NODE_ENV === 'test') {
 app.use(express.static('./frontend/build/'))
 app.use('/api/threads', threadsRouter)
 app.use('/api/posts', postsRouter)
+app.use('/api/users', usersRouter)
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
