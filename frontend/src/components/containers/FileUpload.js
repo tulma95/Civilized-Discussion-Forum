@@ -1,9 +1,8 @@
 import React from 'react'
-import Resizer from 'react-image-file-resizer';
+import Resizer from 'react-image-file-resizer'
 
 const FileUpload = ({ setFile }) => {
-
-  const handleChange = (event) => {
+  const handleChange = event => {
     Resizer.imageFileResizer(
       event.target.files[0],
       130,
@@ -19,9 +18,11 @@ const FileUpload = ({ setFile }) => {
   }
 
   return (
-    <div>
-      <input type="file" onChange={handleChange} />
-    </div>
+    <input
+      style={{ paddingLeft: '30px' }}
+      type='file'
+      onChange={handleChange}
+    />
   )
 }
 

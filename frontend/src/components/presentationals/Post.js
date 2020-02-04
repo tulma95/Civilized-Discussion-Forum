@@ -5,12 +5,12 @@ const Post = ({ post }) => {
 
   return (
     <div className='post' key={post.id}>
-      <div className='info'>
-        <div className='id'>
-          {post.id} {time}
-        </div>
+      <div className='postInfo'>
+        {post.id} {time}
       </div>
-      <img src={post.imageUrl} alt='' />
+      {post.imageUrl && (
+        <img src={post.imageUrl} style={{ float: 'left' }} alt='' />
+      )}
       {post.content}
     </div>
   )

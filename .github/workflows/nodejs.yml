@@ -21,6 +21,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+      - name: Setup node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
       - run: npm ci
       - run: cd frontend && npm ci
       - name: backend test and generate coverage

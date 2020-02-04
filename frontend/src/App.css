@@ -1,28 +1,35 @@
 .container {
-  margin: 100px;
+  margin: 50px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 150px auto;
+  background-color: lightgray;
   grid-template-areas:
-    "header header"
-    "catalog main";
+    'header header'
+    'catalog main';
+}
+
+.logoHeader {
+  font-size: 50px;
 }
 
 .header {
   grid-area: header;
+  text-align: center;
+  border: 2px solid black;
+  border-bottom: 0px;
 }
 
 .main {
   grid-area: main;
   border: 2px solid black;
-  height: 100%;
-  background-color: lightgray;
 }
 
 .catalog {
   grid-area: catalog;
   border: 2px solid black;
+  border-right-width: 0px;
   background-color: lightgray;
-  height: 100%;
+  padding-left: 10px;
 }
 
 .thread {
@@ -49,20 +56,14 @@
   vertical-align: top;
 }
 
-
-.info {
-  justify-content: start;
-  height: 20px;
+.postInfo {
+  padding: 3px 3px 3px 10px;
   background-color: grey;
+  border-bottom: 1px black solid;
 }
 
 .post {
   border: 1px black solid;
   margin: 4px;
-}
-
-
-
-.categoryList {
-  padding: 10px;
+  overflow: hidden;
 }

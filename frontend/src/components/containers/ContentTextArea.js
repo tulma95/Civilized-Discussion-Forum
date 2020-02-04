@@ -6,7 +6,16 @@ const ContentTextArea = ({ content, setContent }) => {
     setContent(event.target.value)
   }
 
-  return <textarea data-cy='textArea' value={content} onChange={handleChange} />
+  return (
+    <div>
+      <textarea
+        data-cy='textArea'
+        placeholder='Message'
+        value={content}
+        onChange={handleChange}
+      />
+    </div>
+  )
 }
 
 export default ContentTextArea
