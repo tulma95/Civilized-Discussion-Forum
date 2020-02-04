@@ -5,7 +5,7 @@ import CategoryList from './components/presentationals/CategoryList'
 import { Route, Switch } from 'react-router-dom'
 import SingleThread from './components/presentationals/SingleThread'
 import Header from './components/presentationals/Header'
-import HomeView from './components/presentationals/HomeView'
+import homeView from './components/presentationals/homeView'
 
 const listOfCategories = ['videogames', 'politics', 'music']
 
@@ -18,7 +18,7 @@ const App = () => (
       <Switch>
         <Route exact path='/:category' component={ThreadList} />
         <Route exact path='/:category/:id' component={SingleThread} />
-        <Route component={HomeView} />
+        <Route component={homeView} />
       </Switch>
     </div>
   </div>
