@@ -9,21 +9,19 @@ import HomeView from './components/presentationals/HomeView'
 
 const listOfCategories = ['videogames', 'politics', 'music']
 
-const App = () => {
-  return (
-    <div className='container'>
-      <Header />
-      <CategoryList list={listOfCategories} />
+const App = () => (
+  <div className='container'>
+    <Header />
+    <CategoryList list={listOfCategories} />
 
-      <div className='main'>
-        <Switch>
-          <Route exact path='/:category' component={ThreadList} />
-          <Route exact path='/:category/:id' component={SingleThread} />
-          <Route component={HomeView} />
-        </Switch>
-      </div>
+    <div className='main'>
+      <Switch>
+        <Route exact path='/:category' component={ThreadList} />
+        <Route exact path='/:category/:id' component={SingleThread} />
+        <Route component={HomeView} />
+      </Switch>
     </div>
-  )
-}
+  </div>
+)
 
 export default App
