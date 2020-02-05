@@ -10,7 +10,7 @@ describe('when there is initially one user at db', () => {
     await User.create({ username: 'admin', passwordhash: 'sekret' })
   })
 
-  test.only('user can be created', async () => {
+  test('user can be created', async () => {
     const usersAtStart = await User.findAll()
 
     const newUser = {
@@ -29,7 +29,21 @@ describe('when there is initially one user at db', () => {
     expect(usersAtEnd.length).toBe(usersAtStart.length + 1)
   })
 
-  // test('Cannot create user with already existing username', () => {
+  test.only('Cannot create user with already existing username', async () => {
+    const usersAtStart = await User.findAll()
 
-  // })
+    const newUser = {
+      username: 'admin',
+      password: 'newpass'
+    }
+
+    await api
+      .post('/api/users')
+      .send(newUser)
+      .expect(400)
+
+    const usersAtEnd = await User.findAll()
+
+    expect(usersAtEnd.length).toBe(usersAtStart.length)
+  })
 })

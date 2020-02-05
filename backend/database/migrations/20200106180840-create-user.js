@@ -10,7 +10,8 @@ module.exports = {
       },
       username: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: 'actions_unique'
       },
       passwordhash: {
         allowNull: false,
