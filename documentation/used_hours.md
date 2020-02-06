@@ -17,4 +17,5 @@
 | 01.02 | 2     | Make github actions run cypress tests                                              |
 | 03.02 | 4     | Logo, styling page, fixing bugs                                                    |
 | 04.02 | 3     | Fixing bug with github actions, inputs for login and backend for creating new user |
-| total | 59    |                                                                                    |
+| 05.02 | 3     | Learning sequelize validation, user tests                                          |
+| total | 62    |                                                                                    |
