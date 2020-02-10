@@ -19,4 +19,5 @@
 | 04.02 | 3     | Fixing bug with github actions, inputs for login and backend for creating new user |
 | 05.02 | 3     | Learning sequelize validation, user tests                                          |
 | 06.02 | 3     | Registeration validation and login form                                            |
-| total | 65    |                                                                                    |
+| 10.02 | 2     | Fix tests not working with unique constraints                                      |
+| total | 67    |                                                                                    |
