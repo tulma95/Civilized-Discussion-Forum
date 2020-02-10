@@ -1,21 +1,37 @@
-'use strict';
+'use strict'
 module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define('User', {
-    username: DataTypes.STRING,
-    passwordhash: DataTypes.STRING
-  }, {});
-  User.associate = function (models) {
+  const User = sequelize.define(
+    'User',
+    {
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: {
+          args: true,
+          msg: 'Username is already in use'
+        }
+      },
+      passwordhash: DataTypes.STRING
+    },
+    {}
+  )
+  // ;(async () => {
+  //   await sequelize.sync({ force: true })
+  //   // Code here
+  // })()
+
+  User.associate = function(models) {
     // associations can be defined here
     User.hasMany(models.Thread, {
       foreignKey: 'user_id',
       as: 'threads',
-      onDelete: 'CASCADE',
-    });
+      onDelete: 'CASCADE'
+    })
     User.hasMany(models.Post, {
       foreignKey: 'user_id',
       as: 'posts',
-      onDelete: 'CASCADE',
-    });
-  };
-  return User;
-};
+      onDelete: 'CASCADE'
+    })
+  }
+  return User
+}

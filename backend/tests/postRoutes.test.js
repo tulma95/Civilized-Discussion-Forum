@@ -4,7 +4,6 @@ const { db } = require('../database/models/index')
 
 const api = supertest(app)
 
-
 beforeEach(async () => {
   await db.Post.destroy({
     where: {},
@@ -13,22 +12,21 @@ beforeEach(async () => {
 })
 
 const validTestPostWithoutImage = {
-  content: "Test post should work",
+  content: 'Test post should work',
   user_id: 1,
   thread_id: 1,
-  image: ""
+  image: ''
 }
 
 const testPostInvalidContent = {
-  content: "too short",
+  content: 'shrt',
   user_id: 1,
   thread_id: 1,
-  image: ""
+  image: ''
 }
 
 describe('Posts endpoint', () => {
   it('should create new post without image', async () => {
-
     const response = await api
       .post('/api/posts')
       .send(validTestPostWithoutImage)
@@ -44,7 +42,7 @@ describe('Posts endpoint', () => {
     }
 
     expect(savedPost).toEqual({
-      content: "Test post should work",
+      content: 'Test post should work',
       user_id: 1,
       thread_id: 1,
       imageUrl: null
@@ -59,11 +57,11 @@ describe('Posts endpoint', () => {
       .expect('Content-Type', /application\/json/)
 
     expect(response.body).toEqual({
-      "error": "Validation error: Content length must be between 15 and 250 character"
+      error:
+        'Validation error: Content length must be between 5 and 250 character'
     })
   })
 })
-
 
 afterAll(async () => {
   await db.sequelize.close()

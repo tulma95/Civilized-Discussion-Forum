@@ -1,6 +1,5 @@
-const axios = require('axios')
+import axios from 'axios'
 const baseUrl = '/api/posts'
-
 
 const createNewPost = async (threadId, creator, file, content) => {
   const data = {

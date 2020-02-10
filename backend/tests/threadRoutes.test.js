@@ -10,7 +10,7 @@ const initialThreads = [
     user_id: 1,
     title: 'Test thread',
     content: 'What do you like to play the most?',
-    category: 'videogames',
+    category: 'videogames'
   }
 ]
 
@@ -33,9 +33,7 @@ describe('Thread endpoints', () => {
   })
 
   it('return right amount of threads with given category', async () => {
-    await api
-      .get('/api/threads/videogames')
-      .expect(200)
+    await api.get('/api/threads/videogames').expect(200)
   })
 
   it('should return single thread', async () => {
@@ -64,12 +62,8 @@ describe('Thread endpoints', () => {
       imageUrl: null,
       posts: []
     })
-
   })
-
-
 })
-
 
 afterAll(async () => {
   await db.sequelize.close()
