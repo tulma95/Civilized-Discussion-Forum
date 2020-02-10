@@ -1,19 +1,24 @@
 'use strict'
 module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define('User', {
-    username: {
-      type: DataTypes.STRING,
-      unique: {
-        args: true,
-        msg: 'Username is already in use'
-      }
+  const User = sequelize.define(
+    'User',
+    {
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: {
+          args: true,
+          msg: 'Username is already in use'
+        }
+      },
+      passwordhash: DataTypes.STRING
     },
-    passwordhash: DataTypes.STRING
-  })
-  ;(async () => {
-    await sequelize.sync({ force: true })
-    // Code here
-  })()
+    {}
+  )
+  // ;(async () => {
+  //   await sequelize.sync({ force: true })
+  //   // Code here
+  // })()
 
   User.associate = function(models) {
     // associations can be defined here

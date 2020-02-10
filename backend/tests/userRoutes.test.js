@@ -29,7 +29,7 @@ describe('when there is initially one user at db', () => {
     expect(usersAtEnd.length).toBe(usersAtStart.length + 1)
   })
 
-  test.only('Cannot create user with already existing username', async () => {
+  test('Cannot create user with already existing username', async () => {
     const usersAtStart = await User.findAll()
 
     const newUser = {
