@@ -18,4 +18,5 @@
 | 03.02 | 4     | Logo, styling page, fixing bugs                                                    |
 | 04.02 | 3     | Fixing bug with github actions, inputs for login and backend for creating new user |
 | 05.02 | 3     | Learning sequelize validation, user tests                                          |
-| total | 62    |                                                                                    |
+| 06.02 | 3     | Registeration validation and login form                                            |
+| total | 65    |                                                                                    |
