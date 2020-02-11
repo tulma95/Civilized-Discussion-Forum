@@ -8,17 +8,21 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         unique: {
           args: true,
-          msg: 'Username is already in use'
+          msg: 'Username is already in use',
+          fields: 'username'
         }
       },
       passwordhash: DataTypes.STRING
     },
-    {}
+    {
+      indexes: [
+        {
+          unique: true,
+          fields: ['username']
+        }
+      ]
+    }
   )
-  // ;(async () => {
-  //   await sequelize.sync({ force: true })
-  //   // Code here
-  // })()
 
   User.associate = function(models) {
     // associations can be defined here

@@ -11,9 +11,8 @@ beforeEach(async () => {
   })
 })
 
-const validTestPostWithoutImage = {
+const validTestPostWithoutImageAndUser = {
   content: 'Test post should work',
-  user_id: 1,
   thread_id: 1,
   image: ''
 }
@@ -26,10 +25,10 @@ const testPostInvalidContent = {
 }
 
 describe('Posts endpoint', () => {
-  it('should create new post without image', async () => {
+  it.only('should create new post without image', async () => {
     const response = await api
       .post('/api/posts')
-      .send(validTestPostWithoutImage)
+      .send(validTestPostWithoutImageAndUser)
       .expect(201)
       .expect('Content-Type', /application\/json/)
 
@@ -41,9 +40,11 @@ describe('Posts endpoint', () => {
       imageUrl: body.imageUrl
     }
 
+    console.log(body)
+
     expect(savedPost).toEqual({
       content: 'Test post should work',
-      user_id: 1,
+      user_id: null,
       thread_id: 1,
       imageUrl: null
     })

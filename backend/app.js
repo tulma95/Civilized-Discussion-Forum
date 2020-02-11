@@ -3,8 +3,10 @@ const app = express()
 const threadsRouter = require('./controllers/threads')
 const postsRouter = require('./controllers/posts')
 const usersRouter = require('./controllers/users')
+const loginRouter = require('./controllers/login')
 const bodyParser = require('body-parser')
 const { requestLogger, errorHandler } = require('./utils/middleware')
+const path = require('path')
 
 app.use(
   bodyParser.urlencoded({
@@ -24,6 +26,11 @@ app.use(express.static('./frontend/build/'))
 app.use('/api/threads', threadsRouter)
 app.use('/api/posts', postsRouter)
 app.use('/api/users', usersRouter)
+app.use('/api/login', loginRouter)
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../frontend/build/index.html'))
+})
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
