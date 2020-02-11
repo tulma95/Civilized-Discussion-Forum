@@ -5,8 +5,8 @@ const { uploadImage } = require('../utils/uploadImage')
 postsRouter.post('/', async (req, res, next) => {
   const body = req.body
 
-  const imageUrl = body.image.length === 0 ? null : await uploadImage(body.image)
-
+  const imageUrl =
+    body.image.length === 0 ? null : await uploadImage(body.image)
 
   const newPost = {
     user_id: body.user_id,
@@ -22,8 +22,5 @@ postsRouter.post('/', async (req, res, next) => {
     next(error)
   }
 })
-
-
-
 
 module.exports = postsRouter
