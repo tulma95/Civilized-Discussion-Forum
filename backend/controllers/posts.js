@@ -9,7 +9,6 @@ postsRouter.post('/', async (req, res, next) => {
     body.image.length === 0 ? null : await uploadImage(body.image)
 
   const newPost = {
-    user_id: body.user_id,
     thread_id: body.thread_id,
     content: body.content,
     imageUrl
