@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import logInService from '../../services/userService'
+import userService from '../../services/userService'
+import loginService from '../../services/loginService'
 import './login.scss'
 
 const Login = () => {
@@ -15,25 +16,26 @@ const Login = () => {
       username: username.current.value,
       password: password.current.value
     }
-    const response = toggleRegister ? await register(user) : await login(user)
+    const response = toggleRegister ? await register(user) : await loggain(user)
     if (response.error) {
       setMessage(response.error)
     } else {
       resetFields()
-      console.log(response)
     }
   }
 
   const resetFields = () => {
     username.current.value = ''
     password.current.value = ''
-    retypePassword.current.value = ''
+    toggleRegister && (retypePassword.current.value = '')
   }
 
-  const login = () => {}
+  const loggain = async credentials => {
+    return await loginService.login(credentials)
+  }
 
   const register = async user => {
-    return await logInService.registerUser(user)
+    return await userService.registerUser(user)
   }
 
   const validate = () => {
