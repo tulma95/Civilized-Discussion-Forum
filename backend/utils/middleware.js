@@ -10,7 +10,6 @@ const requestLogger = (req, res, next) => {
 
 const errorHandler = (error, req, res, next) => {
   logger.error(error.message)
-  console.log(error)
   if (error.name === 'SequelizeValidationError') {
     return res.status(400).json({ error: error.message })
   } else if (error) {
