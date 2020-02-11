@@ -7,18 +7,24 @@ const Login = () => {
   const password = React.createRef()
   const retypePassword = React.createRef()
   const [toggleRegister, setToggleRegister] = useState(false)
+  const [message, setMessage] = useState('')
 
-  const handleSubmit = event => {
+  const handleSubmit = async event => {
     event.preventDefault()
     const user = {
       username: username.current.value,
       password: password.current.value
     }
-    if (toggleRegister) {
-      register(user)
+    const response = toggleRegister ? await register(user) : await login(user)
+    if (response.error) {
+      setMessage(response.error)
     } else {
-      login()
+      resetFields()
+      console.log(response)
     }
+  }
+
+  const resetFields = () => {
     username.current.value = ''
     password.current.value = ''
     retypePassword.current.value = ''
@@ -26,8 +32,8 @@ const Login = () => {
 
   const login = () => {}
 
-  const register = user => {
-    logInService.registerUser(user)
+  const register = async user => {
+    return await logInService.registerUser(user)
   }
 
   const validate = () => {
@@ -59,7 +65,6 @@ const Login = () => {
           minLength='3'
           ref={username}
           placeholder='username'
-          style={{ width: '100%' }}
           type='text'
         />
         <input
@@ -67,7 +72,6 @@ const Login = () => {
           minLength='5'
           ref={password}
           placeholder='password'
-          style={{ width: '100%' }}
           type='password'
           onChange={validate}
         />
@@ -77,6 +81,7 @@ const Login = () => {
       <button onClick={() => setToggleRegister(!toggleRegister)}>
         {toggleRegister ? 'cancel' : 'register'}
       </button>
+      <div>{message}</div>
     </div>
   )
 }
