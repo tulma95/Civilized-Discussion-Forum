@@ -1,9 +1,20 @@
 const postsRouter = require('express').Router()
 const { Post } = require('../database/models/index')
 const { uploadImage } = require('../utils/uploadImage')
+const jwt = require('jsonwebtoken')
+
+const getTokenFrom = request => {
+  const authorization = request.get('authorization')
+  if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
+    return authorization.substring(7)
+  }
+  return null
+}
 
 postsRouter.post('/', async (req, res, next) => {
   const body = req.body
+
+  const token = getTokenFrom(req)
 
   const imageUrl =
     body.image.length === 0 ? null : await uploadImage(body.image)
