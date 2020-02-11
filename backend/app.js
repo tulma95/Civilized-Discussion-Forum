@@ -5,6 +5,7 @@ const postsRouter = require('./controllers/posts')
 const usersRouter = require('./controllers/users')
 const bodyParser = require('body-parser')
 const { requestLogger, errorHandler } = require('./utils/middleware')
+const path = require('path')
 
 app.use(
   bodyParser.urlencoded({
@@ -24,6 +25,10 @@ app.use(express.static('./frontend/build/'))
 app.use('/api/threads', threadsRouter)
 app.use('/api/posts', postsRouter)
 app.use('/api/users', usersRouter)
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../frontend/build/index.html'))
+})
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
