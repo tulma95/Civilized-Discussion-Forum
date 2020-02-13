@@ -16,10 +16,13 @@ postsRouter.post('/', async (req, res, next) => {
 
   const token = getTokenFrom(req)
 
+  const decodedToken = token && jwt.verify(token, process.env.SECRET)
+
   const imageUrl =
     body.image.length === 0 ? null : await uploadImage(body.image)
 
   const newPost = {
+    user_id: token ? decodedToken.id : null,
     thread_id: body.thread_id,
     content: body.content,
     imageUrl

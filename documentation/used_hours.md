@@ -20,4 +20,5 @@
 | 05.02 | 3     | Learning sequelize validation, user tests                                          |
 | 06.02 | 3     | Registeration validation and login form                                            |
 | 10.02 | 2     | Fix tests not working with unique constraints                                      |
-| total | 67    |                                                                                    |
+| 11.02 | 3     | Add jwt, log in, finish registeration                                              |
+| total | 70    |                                                                                    |
