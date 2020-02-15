@@ -6,9 +6,11 @@ import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 import threadReducer from './reducers/threadReducer'
+import userReducer from './reducers/userReducer'
 
 const reducer = combineReducers({
-  threads: threadReducer
+  threads: threadReducer,
+  user: userReducer
 })
 
 const store = createStore(reducer)
