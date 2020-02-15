@@ -13,19 +13,21 @@ const getTokenFrom = request => {
 
 postsRouter.post('/', async (req, res, next) => {
   const body = req.body
-
-  const token = getTokenFrom(req)
-
-  const imageUrl =
-    body.image.length === 0 ? null : await uploadImage(body.image)
-
-  const newPost = {
-    thread_id: body.thread_id,
-    content: body.content,
-    imageUrl
-  }
-
   try {
+    const token = getTokenFrom(req)
+
+    const decodedToken = token && jwt.verify(token, process.env.SECRET)
+
+    const imageUrl =
+      body.image.length === 0 ? null : await uploadImage(body.image)
+
+    const newPost = {
+      user_id: token ? decodedToken.id : null,
+      thread_id: body.thread_id,
+      content: body.content,
+      imageUrl
+    }
+
     const savedPost = await Post.create(newPost)
     res.status(201).json(savedPost)
   } catch (error) {

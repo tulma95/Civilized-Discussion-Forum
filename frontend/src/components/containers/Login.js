@@ -1,81 +1,86 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux'
 import userService from '../../services/userService'
 import loginService from '../../services/loginService'
+import { logInUser } from '../../reducers/userReducer'
 import './login.scss'
 
-const Login = () => {
-  const username = React.createRef()
-  const password = React.createRef()
-  const retypePassword = React.createRef()
+const Login = props => {
   const [toggleRegister, setToggleRegister] = useState(false)
   const [message, setMessage] = useState('')
 
   const handleSubmit = async event => {
     event.preventDefault()
+    const { username, password, rePassword } = event.target
     const user = {
-      username: username.current.value,
-      password: password.current.value
+      username: username.value,
+      password: password.value
     }
-    const response = toggleRegister ? await register(user) : await loggain(user)
-    if (response.error) {
-      setMessage(response.error)
-    } else {
-      resetFields()
-    }
+    toggleRegister ? register(password, rePassword, username) : loggain(user)
   }
 
-  const resetFields = () => {
-    username.current.value = ''
-    password.current.value = ''
-    toggleRegister && (retypePassword.current.value = '')
+  const resetFields = (...fields) => {
+    const resetValue = field => {
+      field.value = ''
+    }
+    fields.forEach(resetValue)
   }
 
   const loggain = async credentials => {
-    return await loginService.login(credentials)
-  }
-
-  const register = async user => {
-    return await userService.registerUser(user)
-  }
-
-  const validate = () => {
-    if (!retypePassword.current) return
-    if (password.current.value !== retypePassword.current.value) {
-      retypePassword.current.setCustomValidity('Password must match')
+    const response = await loginService.login(credentials)
+    if (response.error) {
+      handleMessage(response.error)
     } else {
-      password.current.setCustomValidity('')
-      retypePassword.current.setCustomValidity('')
+      props.logInUser(response)
     }
   }
 
+  const handleMessage = message => {
+    setMessage(message)
+    setTimeout(() => {
+      setMessage('')
+    }, 3000)
+  }
+
+  const register = async (password, rePassword, username) => {
+    const response = validatePassword(password.value, rePassword.value)
+      ? await userService.registerUser({
+          username: username.value,
+          password: password.value
+        })
+      : { error: 'Passwords must match' }
+    if (response.error) {
+      handleMessage(response.error)
+    } else {
+      resetFields(username, password, rePassword)
+      handleMessage('Succesfully registered')
+    }
+  }
+
+  const validatePassword = (password, rePassword) => {
+    return password.value === rePassword.value
+  }
+
   const registerInputs = () => (
-    <input
-      minLength='5'
-      required
-      placeholder='retype password'
-      ref={retypePassword}
-      type='password'
-      onChange={validate}
-    />
+    <input name='rePassword' placeholder='retype password' type='password' />
   )
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form noValidate={!toggleRegister} onSubmit={handleSubmit}>
         <input
+          name='username'
           required
           minLength='3'
-          ref={username}
           placeholder='username'
           type='text'
         />
         <input
+          name='password'
           required
           minLength='5'
-          ref={password}
           placeholder='password'
           type='password'
-          onChange={validate}
         />
         {toggleRegister && registerInputs()}
         <button type='submit'>{toggleRegister ? 'register' : 'login'}</button>
@@ -88,4 +93,16 @@ const Login = () => {
   )
 }
 
-export default Login
+const mapStateToProps = state => {
+  return {
+    user: state.user
+  }
+}
+
+const mapDispatchToProps = {
+  logInUser
+}
+
+const connectedLogin = connect(mapStateToProps, mapDispatchToProps)(Login)
+
+export default connectedLogin

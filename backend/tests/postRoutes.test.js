@@ -25,7 +25,7 @@ const testPostInvalidContent = {
 }
 
 describe('Posts endpoint', () => {
-  it.only('should create new post without image', async () => {
+  it('should create new post without image', async () => {
     const response = await api
       .post('/api/posts')
       .send(validTestPostWithoutImageAndUser)
@@ -39,8 +39,6 @@ describe('Posts endpoint', () => {
       content: body.content,
       imageUrl: body.imageUrl
     }
-
-    console.log(body)
 
     expect(savedPost).toEqual({
       content: 'Test post should work',
