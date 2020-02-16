@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import userService from '../../services/userService'
 import loginService from '../../services/loginService'
 import { logInUser } from '../../reducers/userReducer'
 import './login.scss'
 
-const Login = props => {
+const Login = () => {
   const [toggleRegister, setToggleRegister] = useState(false)
   const [message, setMessage] = useState('')
+  const dispatch = useDispatch()
 
   const handleSubmit = async event => {
     event.preventDefault()
@@ -31,7 +32,8 @@ const Login = props => {
     if (response.error) {
       handleMessage(response.error)
     } else {
-      props.logInUser(response)
+      window.localStorage.setItem('loggedUser', JSON.stringify(response))
+      dispatch(logInUser(response))
     }
   }
 
@@ -61,7 +63,7 @@ const Login = props => {
     return password.value === rePassword.value
   }
 
-  const registerInputs = () => (
+  const registerInput = () => (
     <input name='rePassword' placeholder='retype password' type='password' />
   )
 
@@ -82,7 +84,7 @@ const Login = props => {
           placeholder='password'
           type='password'
         />
-        {toggleRegister && registerInputs()}
+        {toggleRegister && registerInput()}
         <button type='submit'>{toggleRegister ? 'register' : 'login'}</button>
       </form>
       <button onClick={() => setToggleRegister(!toggleRegister)}>
@@ -93,16 +95,4 @@ const Login = props => {
   )
 }
 
-const mapStateToProps = state => {
-  return {
-    user: state.user
-  }
-}
-
-const mapDispatchToProps = {
-  logInUser
-}
-
-const connectedLogin = connect(mapStateToProps, mapDispatchToProps)(Login)
-
-export default connectedLogin
+export default Login

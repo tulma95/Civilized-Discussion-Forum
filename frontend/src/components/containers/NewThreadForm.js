@@ -3,9 +3,10 @@ import threadService from '../../services/threadService'
 import FileUpload from './FileUpload'
 import { useParams } from 'react-router-dom'
 import ContentTextArea from './ContentTextArea'
+import { addThread } from '../../reducers/threadReducer'
 import './newThreadForm.css'
 
-const NewThreadForm = ({ setThreads }) => {
+const NewThreadForm = ({ dispatch }) => {
   const [title, setTitle] = useState('')
   const [file, setFile] = useState('')
   const [content, setContent] = useState('')
@@ -25,7 +26,7 @@ const NewThreadForm = ({ setThreads }) => {
         content
       )
       const data = { ...newThread.data, posts: [] }
-      setThreads(data)
+      dispatch(addThread(data))
       setTitle('')
       setContent('')
     }
