@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/tulma95/Civilized-Discussion-Forum#readme",
   "dependencies": {
-    "aws-sdk": "^2.610.0",
+    "aws-sdk": "^2.619.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
@@ -49,7 +49,7 @@
     "jsonwebtoken": "^8.5.1",
     "pg": "^7.18.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^5.21.3",
+    "sequelize": "^5.21.4",
     "sequelize-cli": "^5.5.1",
     "uuid": "^3.4.0"
   },
