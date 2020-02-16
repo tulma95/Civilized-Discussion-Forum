@@ -3,9 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import NewThreadForm from './NewThreadForm'
 import Thread from '../presentationals/Thread'
 import { useParams } from 'react-router-dom'
-import { fetchThreads } from '../../reducers/threadReducer'
+import { changeThreads } from '../../reducers/threadReducer'
 import threadService from '../../services/threadService'
-
 import './threadList.css'
 
 const ThreadList = () => {
@@ -16,7 +15,7 @@ const ThreadList = () => {
   useEffect(() => {
     const initThreads = async () => {
       const threads = await threadService.getThreadsByCategory(category)
-      dispatch(fetchThreads(threads))
+      dispatch(changeThreads(threads))
     }
     initThreads()
   }, [category, dispatch])
