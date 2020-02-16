@@ -8,13 +8,17 @@ import { Route, Switch } from 'react-router-dom'
 import SingleThread from './components/containers/SingleThread'
 import Header from './components/presentationals/Header'
 import homeView from './components/presentationals/homeView'
+import { useEffect } from 'react'
 
 const listOfCategories = ['videogames', 'politics', 'music']
 
 const App = () => {
-  const user = window.localStorage.getItem('loggedUser')
   const dispatch = useDispatch()
-  if (user) dispatch(logInUser(JSON.parse(user)))
+
+  useEffect(() => {
+    const user = window.localStorage.getItem('loggedUser')
+    if (user) dispatch(logInUser(JSON.parse(user)))
+  }, [])
 
   return (
     <div className='container'>
