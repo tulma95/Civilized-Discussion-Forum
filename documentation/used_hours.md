@@ -21,4 +21,5 @@
 | 06.02 | 3     | Registeration validation and login form                                            |
 | 10.02 | 2     | Fix tests not working with unique constraints                                      |
 | 11.02 | 3     | Add jwt, log in, finish registeration                                              |
-| total | 70    |                                                                                    |
+| 15.02 | 5     | Refactor login component, finish login, user reducer                               |
+| total | 75    |                                                                                    |
