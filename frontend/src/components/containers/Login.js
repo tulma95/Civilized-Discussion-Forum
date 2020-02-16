@@ -32,6 +32,7 @@ const Login = () => {
     if (response.error) {
       handleMessage(response.error)
     } else {
+      window.localStorage.setItem('loggedUser', JSON.stringify(response))
       dispatch(logInUser(response))
     }
   }
@@ -62,7 +63,7 @@ const Login = () => {
     return password.value === rePassword.value
   }
 
-  const registerInputs = () => (
+  const registerInput = () => (
     <input name='rePassword' placeholder='retype password' type='password' />
   )
 
@@ -83,7 +84,7 @@ const Login = () => {
           placeholder='password'
           type='password'
         />
-        {toggleRegister && registerInputs()}
+        {toggleRegister && registerInput()}
         <button type='submit'>{toggleRegister ? 'register' : 'login'}</button>
       </form>
       <button onClick={() => setToggleRegister(!toggleRegister)}>
