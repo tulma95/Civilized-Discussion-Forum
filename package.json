@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node backend/",
-    "start:test": "cross-env NODE_ENV=test node backend/",
+    "start:test": "cross-env NODE_ENV=test nodemon backend/",
     "build": "cd frontend/ && npm install && npm run build",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000 --coverage",
     "test:dev": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=10000 --watchAll",
