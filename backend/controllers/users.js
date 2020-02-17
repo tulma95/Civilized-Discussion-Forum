@@ -5,6 +5,14 @@ const { User } = require('../database/models/index')
 usersRouter.post('/', async (req, res, next) => {
   try {
     const body = req.body
+
+    if (body.password.length < 5) {
+      throw {
+        name: 'ValidationError',
+        message: 'password must be longer than 5 characters'
+      }
+    }
+
     const saltRounds = 10
     const passwordhash = await bcrypt.hash(body.password, saltRounds)
 
