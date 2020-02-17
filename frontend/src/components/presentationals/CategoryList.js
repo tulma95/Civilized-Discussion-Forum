@@ -1,14 +1,12 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import Login from '../containers/Login'
+import UserHandler from '../containers/UserHandler'
 
-const CategoryList = props => {
-  console.log(props.user)
+const CategoryList = ({ list }) => {
   return (
     <div className='catalog'>
-      {props.user ? <p>Welcome {props.user.username}</p> : <Login />}
-      {props.list.map(category => (
+      <UserHandler />
+      {list.map(category => (
         <Link key={category} data-cy={category} to={`/${category}`}>
           {category} <br />
         </Link>
@@ -17,12 +15,4 @@ const CategoryList = props => {
   )
 }
 
-const mapStateToProps = state => {
-  return {
-    user: state.user
-  }
-}
-
-const connectedCategoryList = connect(mapStateToProps)(CategoryList)
-
-export default connectedCategoryList
+export default CategoryList

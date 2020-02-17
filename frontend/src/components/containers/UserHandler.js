@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import userService from '../../services/userService'
 import loginService from '../../services/loginService'
-import { logInUser } from '../../reducers/userReducer'
-import './login.scss'
+import { logInUser, logoutUser } from '../../reducers/userReducer'
+import './UserHandler.scss'
+import LoginForm from './LoginForm'
 
-const Login = () => {
-  const [toggleRegister, setToggleRegister] = useState(false)
+const UserHandler = () => {
   const [message, setMessage] = useState('')
+  const [toggleRegister, setToggleRegister] = useState(false)
   const dispatch = useDispatch()
+  const user = useSelector(state => state).user
 
   const handleSubmit = async event => {
     event.preventDefault()
@@ -17,7 +19,7 @@ const Login = () => {
       username: username.value,
       password: password.value
     }
-    toggleRegister ? register(password, rePassword, username) : loggain(user)
+    toggleRegister ? register(password, rePassword, username) : login(user)
   }
 
   const resetFields = (...fields) => {
@@ -27,7 +29,7 @@ const Login = () => {
     fields.forEach(resetValue)
   }
 
-  const loggain = async credentials => {
+  const login = async credentials => {
     const response = await loginService.login(credentials)
     if (response.error) {
       handleMessage(response.error)
@@ -63,36 +65,25 @@ const Login = () => {
     return password.value === rePassword.value
   }
 
-  const registerInput = () => (
-    <input name='rePassword' placeholder='retype password' type='password' />
-  )
+  const logout = () => {
+    window.localStorage.removeItem('loggedUser')
+    dispatch(logoutUser())
+  }
 
   return (
     <div>
-      <form noValidate={!toggleRegister} onSubmit={handleSubmit}>
-        <input
-          name='username'
-          required
-          minLength='3'
-          placeholder='username'
-          type='text'
+      {user ? (
+        <button onClick={logout}>Logout</button>
+      ) : (
+        <LoginForm
+          toggleRegister={toggleRegister}
+          setToggleRegister={setToggleRegister}
+          handleSubmit={handleSubmit}
         />
-        <input
-          name='password'
-          required
-          minLength='5'
-          placeholder='password'
-          type='password'
-        />
-        {toggleRegister && registerInput()}
-        <button type='submit'>{toggleRegister ? 'register' : 'login'}</button>
-      </form>
-      <button onClick={() => setToggleRegister(!toggleRegister)}>
-        {toggleRegister ? 'cancel' : 'register'}
-      </button>
-      <div>{message}</div>
+      )}
+      {message}
     </div>
   )
 }
 
-export default Login
+export default UserHandler
