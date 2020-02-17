@@ -10,6 +10,12 @@ module.exports = (sequelize, DataTypes) => {
           args: true,
           msg: 'Username is already in use',
           fields: 'username'
+        },
+        validate: {
+          len: {
+            args: [3, 100],
+            msg: 'Username must be between 3 and 100 characters long'
+          }
         }
       },
       passwordhash: DataTypes.STRING

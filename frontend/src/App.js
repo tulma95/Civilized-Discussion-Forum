@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     const user = window.localStorage.getItem('loggedUser')
     if (user) dispatch(logInUser(JSON.parse(user)))
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='container'>

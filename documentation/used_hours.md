@@ -22,4 +22,5 @@
 | 10.02 | 2     | Fix tests not working with unique constraints                                      |
 | 11.02 | 3     | Add jwt, log in, finish registeration                                              |
 | 15.02 | 5     | Refactor login component, finish login, user reducer                               |
-| total | 75    |                                                                                    |
+| 16.02 | 4     | Change connect to redux hoox, save user to local storage, make code more clear     |
+| total | 79    |                                                                                    |
