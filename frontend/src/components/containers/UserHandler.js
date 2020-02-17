@@ -70,10 +70,17 @@ const UserHandler = () => {
     }, 3000)
   }
 
+  const loggedUserInfo = () => (
+    <div>
+      <div>Logged in as {user.username}</div>
+      <button onClick={logout}>Logout</button>
+    </div>
+  )
+
   return (
     <div>
       {user ? (
-        <button onClick={logout}>Logout</button>
+        loggedUserInfo()
       ) : (
         <LoginForm
           toggleRegister={toggleRegister}
