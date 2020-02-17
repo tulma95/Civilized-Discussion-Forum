@@ -22,13 +22,6 @@ const UserHandler = () => {
     toggleRegister ? register(password, rePassword, username) : login(user)
   }
 
-  const resetFields = (...fields) => {
-    const resetValue = field => {
-      field.value = ''
-    }
-    fields.forEach(resetValue)
-  }
-
   const login = async credentials => {
     const response = await loginService.login(credentials)
     if (response.error) {
@@ -39,11 +32,9 @@ const UserHandler = () => {
     }
   }
 
-  const handleMessage = message => {
-    setMessage(message)
-    setTimeout(() => {
-      setMessage('')
-    }, 3000)
+  const logout = () => {
+    window.localStorage.removeItem('loggedUser')
+    dispatch(logoutUser())
   }
 
   const register = async (password, rePassword, username) => {
@@ -61,13 +52,22 @@ const UserHandler = () => {
     }
   }
 
+  const resetFields = (...fields) => {
+    const resetValue = field => {
+      field.value = ''
+    }
+    fields.forEach(resetValue)
+  }
+
   const validatePassword = (password, rePassword) => {
     return password.value === rePassword.value
   }
 
-  const logout = () => {
-    window.localStorage.removeItem('loggedUser')
-    dispatch(logoutUser())
+  const handleMessage = message => {
+    setMessage(message)
+    setTimeout(() => {
+      setMessage('')
+    }, 3000)
   }
 
   return (
