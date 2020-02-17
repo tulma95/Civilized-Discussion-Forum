@@ -44,6 +44,7 @@ const UserHandler = () => {
           password: password.value
         })
       : { error: 'Passwords must match' }
+    console.log(response)
     if (response.error) {
       handleMessage(response.error)
     } else {
@@ -60,7 +61,7 @@ const UserHandler = () => {
   }
 
   const validatePassword = (password, rePassword) => {
-    return password.value === rePassword.value
+    return password === rePassword
   }
 
   const handleMessage = message => {
