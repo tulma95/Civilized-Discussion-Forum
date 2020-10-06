@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    command: >
+      bash -c "npm run migrate-prod
+      && npm start"
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
+    ports:
+      - "3003:3003"
+    depends_on:
+      - db

@@ -23,4 +23,5 @@
 | 11.02 | 3     | Add jwt, log in, finish registeration                                              |
 | 15.02 | 5     | Refactor login component, finish login, user reducer                               |
 | 16.02 | 4     | Change connect to redux hoox, save user to local storage, make code more clear     |
-| total | 79    |                                                                                    |
+| 06.10 | 4     | Start dockerizing the application. Got it running with db                          |
+| total | 83    |                                                                                    |
