@@ -1,8 +1,8 @@
 FROM node:12
 
-WORKDIR /usr/src/app
 
-ENV NODE_ENV='production'
+RUN mkdir -p /usr/src/app && \
+  chown -R node:node /usr/src/app
 
 COPY package.json .
 RUN npm install
@@ -21,5 +21,8 @@ RUN npm run build-frontend
 EXPOSE 3003
 EXPOSE 3000
 
+USER node
+
+ENV NODE_ENV='production'
 
 CMD ["npm", "run", "start"]
