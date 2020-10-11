@@ -2,12 +2,24 @@ FROM node:12
 
 WORKDIR /usr/src/app
 
+ENV NODE_ENV='production'
+
+COPY package.json .
+RUN npm install
+
+WORKDIR /usr/src/app/frontend
+COPY ./frontend/package.json .
+RUN npm install
+
+WORKDIR /usr/src/app
+
+
 COPY . .
 
-EXPOSE 3003
+RUN npm run build-frontend
 
-RUN npm install
-RUN npm run build
+EXPOSE 3003
+EXPOSE 3000
 
 
 CMD ["npm", "run", "start"]

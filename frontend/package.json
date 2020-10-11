@@ -17,7 +17,7 @@
     "react-scripts": "^3.4.3",
     "redux": "^4.0.5"
   },
-  "proxy": "http://localhost:3003",
+  "proxy": "http://backend:3003",
   "scripts": {
     "start": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
