@@ -10,7 +10,7 @@ import Header from './components/presentationals/Header'
 import homeView from './components/presentationals/homeView'
 import { useEffect } from 'react'
 
-const listOfCategories = ['videogames', 'politics', 'music']
+const listOfCategories = ['videogame', 'politics', 'music']
 
 const App = () => {
   const dispatch = useDispatch()
@@ -21,14 +21,14 @@ const App = () => {
   }, [dispatch])
 
   return (
-    <div className='container'>
+    <div className="container">
       <Header />
       <CategoryList list={listOfCategories} />
 
-      <div className='main'>
+      <div className="main">
         <Switch>
-          <Route exact path='/:category' component={ThreadList} />
-          <Route exact path='/:category/:id' component={SingleThread} />
+          <Route exact path="/:category" component={ThreadList} />
+          <Route exact path="/:category/:id" component={SingleThread} />
           <Route component={homeView} />
         </Switch>
       </div>
